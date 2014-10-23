@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_admingol_domain_Sucursal" object="${sucursal}" path="/sucursals" z="SNja9FgF7oacycuShfebfxWtdOQ=">
+        <field:display field="empresa" id="s_com_raze_admingol_domain_Sucursal_empresa" object="${sucursal}" z="ZD9zfvUrMQ2KOaRfcuTH0nb6dfw="/>
+        <field:display field="nombre" id="s_com_raze_admingol_domain_Sucursal_nombre" object="${sucursal}" z="yZXQDqqmxfMyelzKCvUJHVyKirE="/>
+        <field:display field="domicilio" id="s_com_raze_admingol_domain_Sucursal_domicilio" object="${sucursal}" z="3lUMF73oNkqPhq76Oy9WquWnXhw="/>
+        <field:display field="telefono" id="s_com_raze_admingol_domain_Sucursal_telefono" object="${sucursal}" z="ZB9umkmZdDtGvIkSWNrYpq/8nNU="/>
+        <field:display field="correoE" id="s_com_raze_admingol_domain_Sucursal_correoE" object="${sucursal}" z="y0GJg++UE7UYLCOtibA3iE8UVqo="/>
+        <field:display field="activo" id="s_com_raze_admingol_domain_Sucursal_activo" object="${sucursal}" z="3O7m9njFARlR3QGxPj9eYIIg6ls="/>
+        <field:display field="usuario" id="s_com_raze_admingol_domain_Sucursal_usuario" object="${sucursal}" z="p2uDxQrujMo6ObZ+tT4PERkJkmE="/>
+        <field:display date="true" dateTimePattern="${sucursal_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_domain_Sucursal_fechaCreacion" object="${sucursal}" z="THP9MkYiowl+OCy7oxLYP17ko3Y="/>
+        <field:display date="true" dateTimePattern="${sucursal_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_domain_Sucursal_fechaModificacion" object="${sucursal}" z="Vh0uAtYl0/ORUGCquYWtdsiCi5Y="/>
+    </page:show>
+</div>

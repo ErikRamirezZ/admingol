@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_admingol_catalog_Posicion" object="${posicion}" path="/posicions" z="SSWrsC2VCXZ9PgDfCsHDjzIRLIg=">
+        <field:display field="nombrePosicion" id="s_com_raze_admingol_catalog_Posicion_nombrePosicion" object="${posicion}" z="6vGD7DSRM8gBK7trMgcmxFnaOYg="/>
+        <field:display field="descripcion" id="s_com_raze_admingol_catalog_Posicion_descripcion" object="${posicion}" z="lN6i2twVQVGhKZYudXJZ3BqfXHs="/>
+        <field:display field="activo" id="s_com_raze_admingol_catalog_Posicion_activo" object="${posicion}" z="+LOSlnBTpdkAujsf/PVQej4vxW4="/>
+        <field:display field="usuario" id="s_com_raze_admingol_catalog_Posicion_usuario" object="${posicion}" z="OKp8lpv/yax/AvuZR9WOCQ45nFk="/>
+        <field:display date="true" dateTimePattern="${posicion_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_catalog_Posicion_fechaCreacion" object="${posicion}" z="gsIiiFkYhGDEdr9WNOZKywPTs88="/>
+        <field:display date="true" dateTimePattern="${posicion_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_catalog_Posicion_fechaModificacion" object="${posicion}" z="x+fqFbGjRTkWGQdok6aXQwI8a6E="/>
+    </page:show>
+</div>

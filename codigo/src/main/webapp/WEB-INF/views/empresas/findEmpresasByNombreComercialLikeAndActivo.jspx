@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByNombreComercialLikeAndActivo" id="ff_com_raze_admingol_domain_Empresa" path="/empresas" z="elhcUPVbyp5cwEk40Haf4OiQQJQ=">
+        <field:input disableFormBinding="true" field="nombreComercial" id="f_com_raze_admingol_domain_Empresa_nombreComercial" required="true" z="qQw34ZTip/LYx94+YERalwyP66A="/>
+        <field:checkbox disableFormBinding="true" field="activo" id="f_com_raze_admingol_domain_Empresa_activo" z="Gxrc1K5qmGZECqrR0wSIdEfl/hI="/>
+    </form:find>
+</div>

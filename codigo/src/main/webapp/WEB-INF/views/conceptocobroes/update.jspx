@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_admingol_catalog_ConceptoCobro" modelAttribute="conceptoCobro" path="/conceptocobroes" versionField="Version" z="bftTItm40ayeaFyly5i/PDLksd8=">
+        <field:input field="nombreConceptoCobro" id="c_com_raze_admingol_catalog_ConceptoCobro_nombreConceptoCobro" required="true" z="uUhiXXoK/REolHt7yAzmZlzLQwg="/>
+        <field:input field="descripcion" id="c_com_raze_admingol_catalog_ConceptoCobro_descripcion" required="true" z="fjaU7I37eNXjGb55QrYBfou4WKA="/>
+        <field:checkbox field="activo" id="c_com_raze_admingol_catalog_ConceptoCobro_activo" z="BW+U7ae88Gy99dsY1Q6kTJ6batI="/>
+        <field:select field="usuario" id="c_com_raze_admingol_catalog_ConceptoCobro_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="DCQPAUYMf/jFQXHS5sWevN1QCwc="/>
+        <field:datetime dateTimePattern="${conceptoCobro_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_catalog_ConceptoCobro_fechaCreacion" z="/CvPRScl39CwknQ+fFIJ+Nzz5eE="/>
+        <field:datetime dateTimePattern="${conceptoCobro_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_catalog_ConceptoCobro_fechaModificacion" z="PmaCbaBceR8sLry91MfBKRlyae8="/>
+    </form:update>
+</div>

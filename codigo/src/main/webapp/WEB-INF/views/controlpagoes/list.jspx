@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_domain_ControlPago" items="${controlpagoes}" z="gl5xdOlb4NcAuUEd7PCyAK2cexs=">
+        <table:table data="${controlpagoes}" id="l_com_raze_admingol_domain_ControlPago" path="/controlpagoes" z="d8G83rr8KAvAVNOTVJyEPIn+KtE=">
+            <table:column id="c_com_raze_admingol_domain_ControlPago_empresa" property="empresa" z="lrXi6i9CtYQ7qzoN4slYLLyQ1lI="/>
+            <table:column id="c_com_raze_admingol_domain_ControlPago_tarifa" property="tarifa" z="+uhaBj2uGXrydvfw80yFDEWeYXI="/>
+            <table:column id="c_com_raze_admingol_domain_ControlPago_cuenta" property="cuenta" z="ILUYxsFn28fHQfBcLsELa1E9Qg0="/>
+            <table:column id="c_com_raze_admingol_domain_ControlPago_noReferencia" property="noReferencia" z="zw+WK2Wq2xaEe6owHo70xmFMwKY="/>
+            <table:column id="c_com_raze_admingol_domain_ControlPago_tipoTarjeta" property="tipoTarjeta" z="D7qBYuifFoAS5s2wVXCgF9SCrPo="/>
+            <table:column id="c_com_raze_admingol_domain_ControlPago_noTC" property="noTC" z="PERK6JtS0YFVEgF+OdlsGj7YUF0="/>
+        </table:table>
+    </page:list>
+</div>

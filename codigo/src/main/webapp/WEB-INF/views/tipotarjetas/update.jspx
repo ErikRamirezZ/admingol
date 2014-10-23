@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_admingol_catalog_TipoTarjeta" modelAttribute="tipoTarjeta" path="/tipotarjetas" versionField="Version" z="nQOW16Ic/oPVgH63ciLrsbPwPeU=">
+        <field:input field="nombreTipoTarjeta" id="c_com_raze_admingol_catalog_TipoTarjeta_nombreTipoTarjeta" required="true" z="UH2RbdBqJwtlpHXO17ae0DvkKBk="/>
+        <field:input field="descripcion" id="c_com_raze_admingol_catalog_TipoTarjeta_descripcion" required="true" z="KixIXH3cFCl4OLAsUq9Hmox4PZg="/>
+        <field:checkbox field="activo" id="c_com_raze_admingol_catalog_TipoTarjeta_activo" z="1T8JO+8cPbqRhLIia8vAzwMFg+k="/>
+        <field:select field="usuario" id="c_com_raze_admingol_catalog_TipoTarjeta_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="71K1N+4f9jyAz8jI4bw3hR0cCZQ="/>
+        <field:datetime dateTimePattern="${tipoTarjeta_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_catalog_TipoTarjeta_fechaCreacion" z="YLBbw8RgFhI6LHswpq/JSdNHpZ4="/>
+        <field:datetime dateTimePattern="${tipoTarjeta_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_catalog_TipoTarjeta_fechaModificacion" z="qdvIrthNTW8wqjhacfshJiJhG+0="/>
+    </form:update>
+</div>

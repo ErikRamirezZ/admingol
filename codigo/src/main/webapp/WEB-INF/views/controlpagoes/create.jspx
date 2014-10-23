@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_admingol_domain_ControlPago" modelAttribute="controlPago" path="/controlpagoes" render="${empty dependencies}" z="3HZ7z02GF/eLMJ/cARJkz3RvB78=">
+        <field:select field="empresa" id="c_com_raze_admingol_domain_ControlPago_empresa" itemValue="id" items="${empresas}" path="/empresas" required="true" z="uND1fk8oVe/oOmqB3hWz/qNUGLc="/>
+        <field:input field="tarifa" id="c_com_raze_admingol_domain_ControlPago_tarifa" required="true" z="3dcBXIcAJhL06k98Q2nzfZM1es8="/>
+        <field:input field="cuenta" id="c_com_raze_admingol_domain_ControlPago_cuenta" z="YyVwEp+CNW0KwDmwYk1TIYaqXIs="/>
+        <field:input field="noReferencia" id="c_com_raze_admingol_domain_ControlPago_noReferencia" z="PhRXAdguvZ8PiRTlRs0E/xG+N1g="/>
+        <field:select field="tipoTarjeta" id="c_com_raze_admingol_domain_ControlPago_tipoTarjeta" itemValue="id" items="${tipotarjetas}" path="/tipotarjetas" z="VVd9wKY5rgaVLcwuOZTi7s5M1pY="/>
+        <field:input field="noTC" id="c_com_raze_admingol_domain_ControlPago_noTC" z="Z+eY2Mo2pzWRCbPXMoPqSiQo4aM="/>
+        <field:input field="codigoSeguridad" id="c_com_raze_admingol_domain_ControlPago_codigoSeguridad" z="IfOMc8Hke9cO77Bg8yk5M5/uYdk="/>
+        <field:select field="fechaVencimientoTC" id="c_com_raze_admingol_domain_ControlPago_fechaVencimientoTC" itemValue="id" items="${fechavencimientotcs}" path="/fechavencimientotcs" z="TVNtpY/mc4ic4FTjLbYAOaoDqrM="/>
+        <field:select field="usuario" id="c_com_raze_admingol_domain_ControlPago_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="4Nqh/2z4cHWxabORlpKWPL5gEYo="/>
+        <field:datetime dateTimePattern="${controlPago_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_ControlPago_fechaCreacion" z="EaFAJ/qgFIVehGDpCOjWpEMYTnE="/>
+        <field:datetime dateTimePattern="${controlPago_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_ControlPago_fechaModificacion" z="55rXNUvA7NjQmNNvnPYDSobyO8c="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_admingol_domain_ControlPago" render="${not empty dependencies}" z="LRNEkmyfG73DY22dd7RMnLOR9F8="/>
+</div>

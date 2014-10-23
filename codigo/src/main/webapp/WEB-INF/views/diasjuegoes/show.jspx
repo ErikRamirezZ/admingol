@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_admingol_catalog_DiasJuego" object="${diasjuego}" path="/diasjuegoes" z="CTfSXH6GZuC+jKhqqxorFxAr/cg=">
+        <field:display field="nombreDiasJuego" id="s_com_raze_admingol_catalog_DiasJuego_nombreDiasJuego" object="${diasjuego}" z="7iJL3PfXMmJlvhF5T7jmD4S9lC8="/>
+        <field:display field="descripcion" id="s_com_raze_admingol_catalog_DiasJuego_descripcion" object="${diasjuego}" z="Xq3jwQCpL051UDHd3QLl/qHlrfo="/>
+        <field:display field="activo" id="s_com_raze_admingol_catalog_DiasJuego_activo" object="${diasjuego}" z="k7OQBPRg+N3gqFf/2kZJP4lNvWg="/>
+        <field:display field="usuario" id="s_com_raze_admingol_catalog_DiasJuego_usuario" object="${diasjuego}" z="nzzUhk2GDebJJsTat92EsyknM5s="/>
+        <field:display date="true" dateTimePattern="${diasJuego_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_catalog_DiasJuego_fechaCreacion" object="${diasjuego}" z="dX9hDyRGVNS48lbbOXvX0XhqI8w="/>
+        <field:display date="true" dateTimePattern="${diasJuego_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_catalog_DiasJuego_fechaModificacion" object="${diasjuego}" z="6KJag7Fe+ll8wqk29NYCklPdCK4="/>
+    </page:show>
+</div>

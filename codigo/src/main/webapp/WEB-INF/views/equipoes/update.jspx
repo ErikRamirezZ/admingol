@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_admingol_domain_Equipo" modelAttribute="equipo" path="/equipoes" versionField="Version" z="iKIxCvskLP6pU5v4zAUk4RrI+eU=">
+        <field:input field="nombre" id="c_com_raze_admingol_domain_Equipo_nombre" required="true" z="16OKDVOamdT4kd+XM6cOapLpF6g="/>
+        <field:input field="nombreCorto" id="c_com_raze_admingol_domain_Equipo_nombreCorto" required="true" z="wQ90w1UYGfPJ1/EwImJKnVBtr6w="/>
+        <field:input field="nombreLargo" id="c_com_raze_admingol_domain_Equipo_nombreLargo" z="3wOZ1A5/X1hysDu8kl36XWAXzHU="/>
+        <field:textarea field="logo" id="c_com_raze_admingol_domain_Equipo_logo" z="3yHAVdDBISz6wExdz+QA6GEX2MU="/>
+        <field:select field="status" id="c_com_raze_admingol_domain_Equipo_status" itemValue="id" items="${statusequipojugadors}" path="/statusequipojugadors" z="8Jz2RdM36au5X4TE/K/nOzMyRz4="/>
+        <field:checkbox field="activo" id="c_com_raze_admingol_domain_Equipo_activo" z="lOcxV9ct7gHvcHeeCUirjom34HA="/>
+        <field:select field="usuario" id="c_com_raze_admingol_domain_Equipo_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="u1U01nSMxwbda26IgGetdeKzVS0="/>
+        <field:datetime dateTimePattern="${equipo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_Equipo_fechaCreacion" z="EbfqsIt0hGAlrYss8prfLK7EE4c="/>
+        <field:datetime dateTimePattern="${equipo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_Equipo_fechaModificacion" z="QbcYL+oYkt4c7mTcI2MW3cIIx9c="/>
+    </form:update>
+</div>

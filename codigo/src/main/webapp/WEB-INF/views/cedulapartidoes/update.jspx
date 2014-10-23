@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_admingol_domain_CedulaPartido" modelAttribute="cedulaPartido" path="/cedulapartidoes" versionField="Version" z="kBiO1d6a4zdvgor2aUWfjMzHBiI=">
+        <field:select field="partido" id="c_com_raze_admingol_domain_CedulaPartido_partido" itemValue="id" items="${partidoes}" path="/partidoes" required="true" z="0Nu9DjGcCm/TYCgBLPHqBBlGVnM="/>
+        <field:input field="marcadorEquipoLocal" id="c_com_raze_admingol_domain_CedulaPartido_marcadorEquipoLocal" z="v7V7iu3YvJ5xgCaWP1t7JApUzEg="/>
+        <field:input field="marcadorEquipoVisitante" id="c_com_raze_admingol_domain_CedulaPartido_marcadorEquipoVisitante" z="TNSTj0800ne9l4zsTsZq9y2FsQ4="/>
+        <field:input field="observaciones" id="c_com_raze_admingol_domain_CedulaPartido_observaciones" z="LR9jV0+pgf9/X38y70ndawgH8q8="/>
+        <field:select field="status" id="c_com_raze_admingol_domain_CedulaPartido_status" itemValue="id" items="${statuscedulas}" path="/statuscedulas" required="true" z="efHU9CFg2olEnp6imQ2amJpWoxk="/>
+        <field:select field="usuario" id="c_com_raze_admingol_domain_CedulaPartido_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="rWXFbYCFDubrgBcrcnKVEan38x4="/>
+        <field:datetime dateTimePattern="${cedulaPartido_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_CedulaPartido_fechaCreacion" z="pyIMjNNwijESD2GLslaXMFqDPp4="/>
+        <field:datetime dateTimePattern="${cedulaPartido_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_CedulaPartido_fechaModificacion" z="5+Czb1M6cHuKklo3SGCzmf0lO9M="/>
+    </form:update>
+</div>

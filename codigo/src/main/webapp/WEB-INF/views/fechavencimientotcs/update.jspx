@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_admingol_catalog_FechaVencimientoTC" modelAttribute="fechaVencimientoTC" path="/fechavencimientotcs" versionField="Version" z="A8Lhtw7WW+0lchTqGXv2+j2dg0I=">
+        <field:input field="nombreFechaVencimientoTC" id="c_com_raze_admingol_catalog_FechaVencimientoTC_nombreFechaVencimientoTC" required="true" z="PtoxmI2RIkVIgEOWHQz87LpSIKo="/>
+        <field:input field="descripcion" id="c_com_raze_admingol_catalog_FechaVencimientoTC_descripcion" required="true" z="AODprPKtm+0tcBxRyLT6xjiEXvs="/>
+        <field:input field="mes" id="c_com_raze_admingol_catalog_FechaVencimientoTC_mes" required="true" z="2VuiM6CICkG8tfPHiIEtG7ZpQRs="/>
+        <field:input field="anio" id="c_com_raze_admingol_catalog_FechaVencimientoTC_anio" required="true" z="wcIhKHOWU3pOCjfxpMUbEbDfSUA="/>
+        <field:checkbox field="activo" id="c_com_raze_admingol_catalog_FechaVencimientoTC_activo" z="M0mY2KMKEZJlFw6zzOLXHutvqUg="/>
+        <field:select field="usuario" id="c_com_raze_admingol_catalog_FechaVencimientoTC_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="o8zQEWdvgSoL+3snCEKHBYCJEXs="/>
+        <field:datetime dateTimePattern="${fechaVencimientoTC_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_catalog_FechaVencimientoTC_fechaCreacion" z="PBUnop3mkCeLwCwLCvf/4qpJhoc="/>
+        <field:datetime dateTimePattern="${fechaVencimientoTC_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_catalog_FechaVencimientoTC_fechaModificacion" z="03xCT3CJx7fmprsbwBeaYr9xB+4="/>
+    </form:update>
+</div>

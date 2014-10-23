@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_catalog_StatusEquipoJugador" items="${statusequipojugadors}" z="RrNgzdAr/H7hNkL4kzUdPLLvnzg=">
+        <table:table data="${statusequipojugadors}" id="l_com_raze_admingol_catalog_StatusEquipoJugador" path="/statusequipojugadors" z="DTGW3O+rKUG/lgjVpDWIHa6kALY=">
+            <table:column id="c_com_raze_admingol_catalog_StatusEquipoJugador_nombreStatusEquipoJugador" property="nombreStatusEquipoJugador" z="yHYx/k3SxWhg/XJ1AyPejV6Z59A="/>
+            <table:column id="c_com_raze_admingol_catalog_StatusEquipoJugador_descripcion" property="descripcion" z="/6lLOR3+BdcFlzbL5JCL8iYYpFo="/>
+            <table:column id="c_com_raze_admingol_catalog_StatusEquipoJugador_activo" property="activo" z="/8hCmsnLcSGcEgusCx2TmF2Wq9c="/>
+            <table:column id="c_com_raze_admingol_catalog_StatusEquipoJugador_usuario" property="usuario" z="+r8/g+KSr+xhK0QOtaFSc9CuTeU="/>
+            <table:column date="true" dateTimePattern="${statusEquipoJugador_fechacreacion_date_format}" id="c_com_raze_admingol_catalog_StatusEquipoJugador_fechaCreacion" property="fechaCreacion" z="eoCugVxEyOCMYuYcZqkwqnftLrs="/>
+            <table:column date="true" dateTimePattern="${statusEquipoJugador_fechamodificacion_date_format}" id="c_com_raze_admingol_catalog_StatusEquipoJugador_fechaModificacion" property="fechaModificacion" z="o4VKiGd0Hh2bKGwBNqPAHLUeWlo="/>
+        </table:table>
+    </page:list>
+</div>

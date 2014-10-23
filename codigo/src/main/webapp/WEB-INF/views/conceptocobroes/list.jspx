@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_catalog_ConceptoCobro" items="${conceptocobroes}" z="74KrdLNkAC4WuJlgv81TDiftJzI=">
+        <table:table data="${conceptocobroes}" id="l_com_raze_admingol_catalog_ConceptoCobro" path="/conceptocobroes" z="Bys5JJBtZVXQPht/2WX4IHfFk2w=">
+            <table:column id="c_com_raze_admingol_catalog_ConceptoCobro_nombreConceptoCobro" property="nombreConceptoCobro" z="K7FScf/QgEnxDGMEwAKklfncMBA="/>
+            <table:column id="c_com_raze_admingol_catalog_ConceptoCobro_descripcion" property="descripcion" z="zZx6KOqa3UxJvNKmQqy3pA5n4FM="/>
+            <table:column id="c_com_raze_admingol_catalog_ConceptoCobro_activo" property="activo" z="s9hwKzs6ydovBIWkL/X0CxYkye4="/>
+            <table:column id="c_com_raze_admingol_catalog_ConceptoCobro_usuario" property="usuario" z="HqR7uUxnchqcFGowVDZ9kV/z0Oo="/>
+            <table:column date="true" dateTimePattern="${conceptoCobro_fechacreacion_date_format}" id="c_com_raze_admingol_catalog_ConceptoCobro_fechaCreacion" property="fechaCreacion" z="bd7NsaU9bv3LATgm55TR9WJhT4A="/>
+            <table:column date="true" dateTimePattern="${conceptoCobro_fechamodificacion_date_format}" id="c_com_raze_admingol_catalog_ConceptoCobro_fechaModificacion" property="fechaModificacion" z="oX8tdHcusi8EbyUxlFFlF2btHyQ="/>
+        </table:table>
+    </page:list>
+</div>

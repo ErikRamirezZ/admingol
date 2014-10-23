@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_admingol_domain_Partido" modelAttribute="partido" path="/partidoes" versionField="Version" z="WygIusN1YGIW7a/4gpcZqmJdt0k=">
+        <field:select field="cancha" id="c_com_raze_admingol_domain_Partido_cancha" itemValue="id" items="${canchas}" path="/canchas" required="true" z="XqWZcKQCf4j17vvDcmGUkMEvGYk="/>
+        <field:select field="arbitros" id="c_com_raze_admingol_domain_Partido_arbitros" itemValue="id" items="${usuarios}" multiple="true" path="/usuarios" z="eWH8mz910NTSz2umRx2S7jWjvcE="/>
+        <field:select field="torneoEquipoLocal" id="c_com_raze_admingol_domain_Partido_torneoEquipoLocal" itemValue="id" items="${torneos}" path="/torneos" z="1K4UKTOb+vGWycq5kKglG07yCj8="/>
+        <field:select field="equipoLocal" id="c_com_raze_admingol_domain_Partido_equipoLocal" itemValue="id" items="${equipoes}" path="/equipoes" z="NaoOswfFfRGAIsppiGvF6lwkSNc="/>
+        <field:select field="torneoEquipoVisitante" id="c_com_raze_admingol_domain_Partido_torneoEquipoVisitante" itemValue="id" items="${torneos}" path="/torneos" z="DHI+LWYC941ZJjAvinN1de6N+SU="/>
+        <field:select field="equipoVisitante" id="c_com_raze_admingol_domain_Partido_equipoVisitante" itemValue="id" items="${equipoes}" path="/equipoes" z="/XrIJI1AWdbVfizlyetZt1dtIXA="/>
+        <field:datetime dateTimePattern="${partido_fechajuego_date_format}" field="fechaJuego" id="c_com_raze_admingol_domain_Partido_fechaJuego" z="AXO8yXtp8x3KvmpruHKdxdKeepQ="/>
+        <field:select field="horario" id="c_com_raze_admingol_domain_Partido_horario" itemValue="id" items="${horarios}" path="/horarios" z="76ylvSA/Jx/z1NsXZksfh+gxAHk="/>
+        <field:select field="tipoPartido" id="c_com_raze_admingol_domain_Partido_tipoPartido" itemValue="id" items="${tipopartidoes}" path="/tipopartidoes" z="sUMMEh0QD88uh/F45zJYlkiYp2E="/>
+        <field:select field="status" id="c_com_raze_admingol_domain_Partido_status" itemValue="id" items="${statuspartidoes}" path="/statuspartidoes" required="true" z="SgXZ6fKtz4psD4Bvp6wD8GGXqSw="/>
+        <field:select field="usuario" id="c_com_raze_admingol_domain_Partido_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="4iu/KJ+V/nI2eDgbU3dgk1dB00M="/>
+        <field:datetime dateTimePattern="${partido_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_Partido_fechaCreacion" z="ni+/Lgaqkx6Ls/MIKV+8WnOG+o8="/>
+        <field:datetime dateTimePattern="${partido_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_Partido_fechaModificacion" z="rqFjOiblQoD+LRYLDw6iWoHTXXU="/>
+    </form:update>
+</div>

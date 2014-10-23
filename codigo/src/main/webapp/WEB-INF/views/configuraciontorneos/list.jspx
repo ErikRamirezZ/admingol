@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_domain_ConfiguracionTorneo" items="${configuraciontorneos}" z="OUrN8Z6bDsaBhK/wRsbHEmHUad0=">
+        <table:table data="${configuraciontorneos}" id="l_com_raze_admingol_domain_ConfiguracionTorneo" path="/configuraciontorneos" z="ghht4KaBwZTvv7yLt9nhK9FsryQ=">
+            <table:column id="c_com_raze_admingol_domain_ConfiguracionTorneo_torneo" property="torneo" z="G5tyVbx0+h+aqIktul2YNXmzcEE="/>
+            <table:column id="c_com_raze_admingol_domain_ConfiguracionTorneo_inscripcion" property="inscripcion" z="lOy2GJsIrSPrro+bchMePnWIYiE="/>
+            <table:column id="c_com_raze_admingol_domain_ConfiguracionTorneo_costoIncripcion" property="costoIncripcion" z="cnm+bNrNJrvwwk6HHFc/6ocBgJA="/>
+            <table:column id="c_com_raze_admingol_domain_ConfiguracionTorneo_tipoCobro" property="tipoCobro" z="WcHZX0d4RQWWKYFFQlvgg6Lr/TY="/>
+            <table:column id="c_com_raze_admingol_domain_ConfiguracionTorneo_costo" property="costo" z="/KqrCjYbPOagAmDGnEuz3m1UYXI="/>
+            <table:column id="c_com_raze_admingol_domain_ConfiguracionTorneo_numeroPagos" property="numeroPagos" z="cVXjWWHIWrI1zswL+nTSyKz3axM="/>
+        </table:table>
+    </page:list>
+</div>

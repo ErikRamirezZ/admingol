@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_admingol_domain_PagoHecho" object="${pagohecho}" path="/pagohechoes" z="38F7Qj343LdPGlNj6aC8jWNwTXA=">
+        <field:display field="controlPago" id="s_com_raze_admingol_domain_PagoHecho_controlPago" object="${pagohecho}" z="WwKxgmXj9NkgDCQYNmHCOpv3LLc="/>
+        <field:display field="monto" id="s_com_raze_admingol_domain_PagoHecho_monto" object="${pagohecho}" z="DuwLZEPXdt8afrYueLf19Eml7ps="/>
+        <field:display field="descuento" id="s_com_raze_admingol_domain_PagoHecho_descuento" object="${pagohecho}" z="7LdmHRDn+6dojnkTFAc9KPi6TNU="/>
+        <field:display date="true" dateTimePattern="${pagoHecho_fechapago_date_format}" field="fechaPago" id="s_com_raze_admingol_domain_PagoHecho_fechaPago" object="${pagohecho}" z="q1Y8vfQiwSq5OARGdAmsqr1pxvI="/>
+        <field:display date="true" dateTimePattern="${pagoHecho_fechavencimiento_date_format}" field="fechaVencimiento" id="s_com_raze_admingol_domain_PagoHecho_fechaVencimiento" object="${pagohecho}" z="wn6cJdxgaEKP+2hVEcSKWoWEtAU="/>
+        <field:display field="usuario" id="s_com_raze_admingol_domain_PagoHecho_usuario" object="${pagohecho}" z="Yq/9XyR7ph0P2oNLxnXh5YZydEs="/>
+        <field:display date="true" dateTimePattern="${pagoHecho_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_domain_PagoHecho_fechaCreacion" object="${pagohecho}" z="0tsH1PxPU6n6ILHd0QMVhHf05Lk="/>
+        <field:display date="true" dateTimePattern="${pagoHecho_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_domain_PagoHecho_fechaModificacion" object="${pagohecho}" z="udANYatgYvNkyUsF+sRhqW+E88U="/>
+    </page:show>
+</div>

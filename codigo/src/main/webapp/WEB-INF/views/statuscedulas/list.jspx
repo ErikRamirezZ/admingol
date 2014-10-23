@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_catalog_StatusCedula" items="${statuscedulas}" z="9QW9RdtzXLJMxhxilj/FbyOImUU=">
+        <table:table data="${statuscedulas}" id="l_com_raze_admingol_catalog_StatusCedula" path="/statuscedulas" z="axUmCLAbU+T8AM8La5Jlkxgk04o=">
+            <table:column id="c_com_raze_admingol_catalog_StatusCedula_nombreStatusCedula" property="nombreStatusCedula" z="QknGBcW/J0tRkRa/9rOle/7aQD4="/>
+            <table:column id="c_com_raze_admingol_catalog_StatusCedula_descripcion" property="descripcion" z="rjpnxqJtUBfVFA9e1mduk/39sxY="/>
+            <table:column id="c_com_raze_admingol_catalog_StatusCedula_activo" property="activo" z="L353xBLBLIecoezKbk37BeCiCFk="/>
+            <table:column id="c_com_raze_admingol_catalog_StatusCedula_usuario" property="usuario" z="sLhQjeL1PQ7rrSYQZOACrELrcY0="/>
+            <table:column date="true" dateTimePattern="${statusCedula_fechacreacion_date_format}" id="c_com_raze_admingol_catalog_StatusCedula_fechaCreacion" property="fechaCreacion" z="d7dyXBG7MBauQ77vni7yw4Fjak4="/>
+            <table:column date="true" dateTimePattern="${statusCedula_fechamodificacion_date_format}" id="c_com_raze_admingol_catalog_StatusCedula_fechaModificacion" property="fechaModificacion" z="RdV6yes+FKOvkBhVQNQWX8GOfyM="/>
+        </table:table>
+    </page:list>
+</div>

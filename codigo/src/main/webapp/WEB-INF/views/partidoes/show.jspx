@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_admingol_domain_Partido" object="${partido}" path="/partidoes" z="KKnFzxod+PtfB/PB2wkjCZUCq5M=">
+        <field:display field="cancha" id="s_com_raze_admingol_domain_Partido_cancha" object="${partido}" z="gfGJ9WxIm6ArZrJX4Ot4QxIFsGc="/>
+        <field:display field="arbitros" id="s_com_raze_admingol_domain_Partido_arbitros" object="${partido}" z="X7IYCGfcCTY87uPLNvYXHWErIrQ="/>
+        <field:display field="torneoEquipoLocal" id="s_com_raze_admingol_domain_Partido_torneoEquipoLocal" object="${partido}" z="bbuXRS4iYC0jlZuhV7gbpMrjg3A="/>
+        <field:display field="equipoLocal" id="s_com_raze_admingol_domain_Partido_equipoLocal" object="${partido}" z="MsgUoAm4LBos5y44e9gO0yXV1E0="/>
+        <field:display field="torneoEquipoVisitante" id="s_com_raze_admingol_domain_Partido_torneoEquipoVisitante" object="${partido}" z="RgMexJQf4kAXy+CxUWW6toXBkE8="/>
+        <field:display field="equipoVisitante" id="s_com_raze_admingol_domain_Partido_equipoVisitante" object="${partido}" z="5rlPpyTOtPorw5W0WGHj4KQ/z4Q="/>
+        <field:display date="true" dateTimePattern="${partido_fechajuego_date_format}" field="fechaJuego" id="s_com_raze_admingol_domain_Partido_fechaJuego" object="${partido}" z="w+Ty7OOuV7ovO/83T69gyo37/lA="/>
+        <field:display field="horario" id="s_com_raze_admingol_domain_Partido_horario" object="${partido}" z="2Xe3FZ2qtNAJnHcgfT0+pM3JkDA="/>
+        <field:display field="tipoPartido" id="s_com_raze_admingol_domain_Partido_tipoPartido" object="${partido}" z="8yoC2TN4e8VJnE/HQZyoIPKX1ME="/>
+        <field:display field="status" id="s_com_raze_admingol_domain_Partido_status" object="${partido}" z="1TWADMuxzWKwIllEKSSF48xj6kA="/>
+        <field:display field="usuario" id="s_com_raze_admingol_domain_Partido_usuario" object="${partido}" z="XYU7lfX08UqyvmDUPeTURYl85wE="/>
+        <field:display date="true" dateTimePattern="${partido_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_domain_Partido_fechaCreacion" object="${partido}" z="jx4uPw+tHGf3OyfQ/ax1Mf8uE+U="/>
+        <field:display date="true" dateTimePattern="${partido_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_domain_Partido_fechaModificacion" object="${partido}" z="a5wTBulV7b/1qW0/xFEId6O7lvM="/>
+    </page:show>
+</div>

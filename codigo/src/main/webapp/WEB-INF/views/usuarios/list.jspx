@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_domain_Usuario" items="${usuarios}" z="qAonkfj7LlXA9lkA1wr1ZTyt3bc=">
+        <table:table data="${usuarios}" id="l_com_raze_admingol_domain_Usuario" path="/usuarios" z="o9YHyjcaVZkW/4LS1q+5VTrxD3Y=">
+            <table:column id="c_com_raze_admingol_domain_Usuario_empresa" property="empresa" z="1xbbs5GotRFeI3Zn+pJ3LDIix5E="/>
+            <table:column id="c_com_raze_admingol_domain_Usuario_nombre" property="nombre" z="mQ2Y6Mo1l1iSN46GDp+NJDIjT5I="/>
+            <table:column id="c_com_raze_admingol_domain_Usuario_apellidoPaterno" property="apellidoPaterno" z="eu6KinFkqSrrHFebCu26cqypWPk="/>
+            <table:column id="c_com_raze_admingol_domain_Usuario_apellidoMaterno" property="apellidoMaterno" z="fNYz58oiyL6wDX+dYzdJqorItto="/>
+            <table:column date="true" dateTimePattern="${usuario_fechanacimiento_date_format}" id="c_com_raze_admingol_domain_Usuario_fechaNacimiento" property="fechaNacimiento" z="EcrAN/K6QNwSDEDM7J/n4ny/J+0="/>
+            <table:column id="c_com_raze_admingol_domain_Usuario_domicilio" property="domicilio" z="V/mIgrhnBsU7fi6OwbR2g4J9QCU="/>
+        </table:table>
+    </page:list>
+</div>

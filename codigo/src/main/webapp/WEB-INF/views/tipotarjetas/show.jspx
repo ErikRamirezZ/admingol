@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_admingol_catalog_TipoTarjeta" object="${tipotarjeta}" path="/tipotarjetas" z="5oitaXIAb+a9FnPRmgE2K/uX/iw=">
+        <field:display field="nombreTipoTarjeta" id="s_com_raze_admingol_catalog_TipoTarjeta_nombreTipoTarjeta" object="${tipotarjeta}" z="TfKvST3lTvWiWoC8ov7p96dGPlg="/>
+        <field:display field="descripcion" id="s_com_raze_admingol_catalog_TipoTarjeta_descripcion" object="${tipotarjeta}" z="89MacWKUDuaxGoWoYcowRJ/YApc="/>
+        <field:display field="activo" id="s_com_raze_admingol_catalog_TipoTarjeta_activo" object="${tipotarjeta}" z="3NvzJ6rodvpV5t7GmhW5QJ06Ino="/>
+        <field:display field="usuario" id="s_com_raze_admingol_catalog_TipoTarjeta_usuario" object="${tipotarjeta}" z="DPzONjBoI2AYMOQwo9RbUFR0EDo="/>
+        <field:display date="true" dateTimePattern="${tipoTarjeta_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_catalog_TipoTarjeta_fechaCreacion" object="${tipotarjeta}" z="eGVTKkipR2bpY5RiySlCGLxHvGo="/>
+        <field:display date="true" dateTimePattern="${tipoTarjeta_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_catalog_TipoTarjeta_fechaModificacion" object="${tipotarjeta}" z="o730klCAvmaIBdytX9C6mL9oOsw="/>
+    </page:show>
+</div>

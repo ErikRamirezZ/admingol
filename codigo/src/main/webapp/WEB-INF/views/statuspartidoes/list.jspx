@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_catalog_StatusPartido" items="${statuspartidoes}" z="0mF6su2ZGm7pqOPu9d473baxqek=">
+        <table:table data="${statuspartidoes}" id="l_com_raze_admingol_catalog_StatusPartido" path="/statuspartidoes" z="7+UaLOeDMo5KUHQ0JoG0Zipi84U=">
+            <table:column id="c_com_raze_admingol_catalog_StatusPartido_nombreStatusPartido" property="nombreStatusPartido" z="UpDybPGgb9sB1oRMyEEIf2YfVUs="/>
+            <table:column id="c_com_raze_admingol_catalog_StatusPartido_descripcion" property="descripcion" z="U22t2/+Nb6l3TzltOmhy6ykyf8Q="/>
+            <table:column id="c_com_raze_admingol_catalog_StatusPartido_activo" property="activo" z="NiHTlxbm1TkeGgs5fsq8sdMdW8o="/>
+            <table:column id="c_com_raze_admingol_catalog_StatusPartido_usuario" property="usuario" z="05E40diFShOVyUnpYEOrj7WPskE="/>
+            <table:column date="true" dateTimePattern="${statusPartido_fechacreacion_date_format}" id="c_com_raze_admingol_catalog_StatusPartido_fechaCreacion" property="fechaCreacion" z="fA7mpxuzUT7pDojWl82KJ/3WDoQ="/>
+            <table:column date="true" dateTimePattern="${statusPartido_fechamodificacion_date_format}" id="c_com_raze_admingol_catalog_StatusPartido_fechaModificacion" property="fechaModificacion" z="y4sMac7BgQ/GwTkltnNcsK0+7hc="/>
+        </table:table>
+    </page:list>
+</div>
