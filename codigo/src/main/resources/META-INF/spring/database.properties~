@@ -8,7 +8,7 @@ database.driverClassName=com.mysql.jdbc.Driver
 #database.password=
 
 #PRODUCCION
-database.url=jdbc\:mysql\://mysql-raazee.whelastic.net/admingol
-database.username=admingol
-database.password=4dm1ng0l
+#database.url=jdbc\:mysql\://mysql-raazee.whelastic.net/admingol
+#database.username=admingol
+#database.password=4dm1ng0l
 

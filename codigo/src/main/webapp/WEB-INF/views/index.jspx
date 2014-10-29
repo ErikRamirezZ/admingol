@@ -10,6 +10,8 @@
   <util:panel id="title" title="${title}">
     <h1><security:authentication property="principal.username" /></h1>
  
+ 
+ 
     <h3>
       <spring:message code="welcome_h3" arguments="${app_name}" />
     </h3>
