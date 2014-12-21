@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_domain_Equipo" items="${equipoes}" z="J923YHPt9/UQ//5ojZ3ijM4MPYo=">
+        <table:table data="${equipoes}" id="l_com_raze_admingol_domain_Equipo" path="/equipoes" z="8GEQR2YSB2BD2uFynCXwgBIIGaM=">
+            <table:column id="c_com_raze_admingol_domain_Equipo_nombre" property="nombre" z="/KB/5543+Ud5kt4TuXyRybD91b4="/>
+            <table:column id="c_com_raze_admingol_domain_Equipo_nombreCorto" property="nombreCorto" z="DzXQ0dEP8D5YX5XoYYmMToMvSVM="/>
+            <table:column id="c_com_raze_admingol_domain_Equipo_torneo" property="torneo" z="z3LJnpDJh5V/rw8gUOgvBFcqEf0="/>
+            <table:column id="c_com_raze_admingol_domain_Equipo_logo" property="logo" z="6m9zL1e4loOCHeKSEw+lqZPnK7o="/>
+            <table:column id="c_com_raze_admingol_domain_Equipo_status" property="status" z="asWD/e+a8C0+Nbgg6IIvDMsW+rA="/>
+            <table:column id="c_com_raze_admingol_domain_Equipo_activo" property="activo" z="XV+r545zHvNY7zlqcEHUuwsXKqs="/>
+        </table:table>
+    </page:list>
+</div>

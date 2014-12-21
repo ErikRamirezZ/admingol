@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_admingol_domain_Abono" modelAttribute="abono" path="/abonoes" versionField="Version" z="u9um0INNNu1lDdxoXOyc+sXf+YE=">
+        <field:select field="cargo" id="c_com_raze_admingol_domain_Abono_cargo" itemValue="id" items="${cargoes}" path="/cargoes" required="true" z="3k31qnQMg9a9RKuvslNAlcr/DWA="/>
+        <field:select field="metodoPago" id="c_com_raze_admingol_domain_Abono_metodoPago" items="${metodopagoes}" path="metodopagoes" required="true" z="wLJTe/3ILuoXukK9t//5imGcT00="/>
+        <field:select field="descuento" id="c_com_raze_admingol_domain_Abono_descuento" items="${descuentoes}" path="descuentoes" z="feXduKTE6ikDm8q23JnpEI0EftU="/>
+        <field:input field="observaciones" id="c_com_raze_admingol_domain_Abono_observaciones" z="KjRph5UwprFnYldkr6Ued8zfsaY="/>
+        <field:select field="status" id="c_com_raze_admingol_domain_Abono_status" items="${statuscargoabonoes}" path="statuscargoabonoes" required="true" z="sSitNuDkJf6dzjWk1RWxList+F8="/>
+        <field:select field="usuario" id="c_com_raze_admingol_domain_Abono_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="cIvGd9FQxxUlyaHuaAWjf781wLE="/>
+        <field:datetime dateTimePattern="${abono_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_Abono_fechaCreacion" z="MkfAt365XaZbCDztD01edNdIK1g="/>
+        <field:datetime dateTimePattern="${abono_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_Abono_fechaModificacion" z="Hs4TBV6CfXtf/jNBTXvdMQVGdvA="/>
+    </form:update>
+</div>

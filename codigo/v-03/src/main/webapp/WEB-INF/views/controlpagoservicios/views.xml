@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="controlpagoservicios/list">
+        <put-attribute name="body" value="/WEB-INF/views/controlpagoservicios/list.jspx"/>
+    </definition>
+<definition extends="default" name="controlpagoservicios/show">
+        <put-attribute name="body" value="/WEB-INF/views/controlpagoservicios/show.jspx"/>
+    </definition>
+<definition extends="default" name="controlpagoservicios/create">
+        <put-attribute name="body" value="/WEB-INF/views/controlpagoservicios/create.jspx"/>
+    </definition>
+<definition extends="default" name="controlpagoservicios/update">
+        <put-attribute name="body" value="/WEB-INF/views/controlpagoservicios/update.jspx"/>
+    </definition>
+</tiles-definitions>

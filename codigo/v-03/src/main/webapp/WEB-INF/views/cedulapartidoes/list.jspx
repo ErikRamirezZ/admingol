@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_domain_CedulaPartido" items="${cedulapartidoes}" z="acoCoBhuSGyTOBuxRlkZMdJ/5c8=">
+        <table:table data="${cedulapartidoes}" id="l_com_raze_admingol_domain_CedulaPartido" path="/cedulapartidoes" z="CFPVR8vnfMG78Km42EAZHX+mKvs=">
+            <table:column id="c_com_raze_admingol_domain_CedulaPartido_partido" property="partido" z="SdRR2TkiZuk68U65x19tLe7hZlQ="/>
+            <table:column date="true" dateTimePattern="${cedulaPartido_horainicioreal_date_format}" id="c_com_raze_admingol_domain_CedulaPartido_horaInicioReal" property="horaInicioReal" z="scITrtSZChV3mJGkyh1W8e7Q4Qs="/>
+            <table:column id="c_com_raze_admingol_domain_CedulaPartido_marcadorEquipoLocal" property="marcadorEquipoLocal" z="W/Y/l+XNdb3IwA4n8JL5PFzsND8="/>
+            <table:column id="c_com_raze_admingol_domain_CedulaPartido_marcadorEquipoVisitante" property="marcadorEquipoVisitante" z="d4ObN+iowxD7NdMVVCbyN/atWJo="/>
+            <table:column id="c_com_raze_admingol_domain_CedulaPartido_observaciones" property="observaciones" z="FGIoTKy9DhZJZ7HUJL0fsgXBzVM="/>
+            <table:column id="c_com_raze_admingol_domain_CedulaPartido_status" property="status" z="imlWxus1Y9y/N7lGW0f0RmldY/Y="/>
+        </table:table>
+    </page:list>
+</div>

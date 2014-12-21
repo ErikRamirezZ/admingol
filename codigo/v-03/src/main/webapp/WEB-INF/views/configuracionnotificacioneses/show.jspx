@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_admingol_domain_ConfiguracionNotificaciones" object="${configuracionnotificaciones}" path="/configuracionnotificacioneses" z="sfu5dqES6pbDPDEPtAHyp+KjpKQ=">
+        <field:display field="usuarios" id="s_com_raze_admingol_domain_ConfiguracionNotificaciones_usuarios" object="${configuracionnotificaciones}" z="1+3uFiZa34ZUnool07zRxk/87pk="/>
+        <field:display field="mensaje" id="s_com_raze_admingol_domain_ConfiguracionNotificaciones_mensaje" object="${configuracionnotificaciones}" z="WOYygy12+SdDWfTcSWAdOigvsUc="/>
+        <field:display date="true" dateTimePattern="${configuracionNotificaciones_fecha_hora_date_format}" field="fecha_hora" id="s_com_raze_admingol_domain_ConfiguracionNotificaciones_fecha_hora" object="${configuracionnotificaciones}" z="uzsGJahzVGR4OnvyP/kUW6JZ0dY="/>
+        <field:display field="viaNotificacion" id="s_com_raze_admingol_domain_ConfiguracionNotificaciones_viaNotificacion" object="${configuracionnotificaciones}" z="bGjH0eC44cudmpxJ+xGz765aGrM="/>
+        <field:display field="repetir" id="s_com_raze_admingol_domain_ConfiguracionNotificaciones_repetir" object="${configuracionnotificaciones}" z="anMegle0PHL5Oa1Y/6M3hN0o4Wo="/>
+        <field:display field="activo" id="s_com_raze_admingol_domain_ConfiguracionNotificaciones_activo" object="${configuracionnotificaciones}" z="4Y3lMII81NhqQzAQdHUIdUqQtpE="/>
+        <field:display field="usuario" id="s_com_raze_admingol_domain_ConfiguracionNotificaciones_usuario" object="${configuracionnotificaciones}" z="OBUyPt8Qg8chuPtsNYdSvaoZ4k8="/>
+        <field:display date="true" dateTimePattern="${configuracionNotificaciones_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_domain_ConfiguracionNotificaciones_fechaCreacion" object="${configuracionnotificaciones}" z="l7753nU63cbcFmKjNlq3J+tLLV4="/>
+        <field:display date="true" dateTimePattern="${configuracionNotificaciones_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_domain_ConfiguracionNotificaciones_fechaModificacion" object="${configuracionnotificaciones}" z="sLnsf9apR8A5WKW1m7IsDpJHdfA="/>
+    </page:show>
+</div>

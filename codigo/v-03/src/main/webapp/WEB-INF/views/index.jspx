@@ -1,0 +1,41 @@
+<div xmlns:spring="http://www.springframework.org/tags"
+	xmlns:util="urn:jsptagdir:/WEB-INF/tags/util"
+	xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+	
+	<jsp:directive.page contentType="text/html;charset=UTF-8" />
+	<jsp:output omit-xml-declaration="yes" />
+	
+  <spring:url value="images/carousel-01.png" var="img1"/>
+  <spring:url value="images/carousel-02.png" var="img2"/>
+  <spring:url value="images/carousel-03.png" var="img3"/>
+  <spring:url value="images/carousel-04.png" var="img4"/>
+	
+	<spring:message var="app_name" code="application_name"
+		htmlEscape="false" />
+	<spring:message var="title" code="welcome_titlepane"
+		arguments="${app_name}" htmlEscape="false" />
+	<util:panel id="title" title="${title}">
+		<h3>
+			<spring:message code="welcome_h3" arguments="${app_name}" />
+		</h3>
+		<p>
+			<spring:message code="welcome_text" />
+		</p>
+		<div id="carrusel" class="carrusel">
+
+			<div class="item">
+				<img src="${img1}" alt="The Last of us">
+			</div>
+			<div class="item">
+				<img src="${img2}" alt="GTA V">
+			</div>
+      <div class="item">
+        <img src="${img3}" alt="Mirror Edge">
+      </div>
+      <div class="item">
+        <img src="${img4}" alt="Mirror Edge">
+      </div>
+
+		</div>
+	</util:panel>
+</div>

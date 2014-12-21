@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_admingol_domain_PagoHechoServicio" object="${pagohechoservicio}" path="/pagohechoservicios" z="44PolORRX8n1wq2LHVBZbTJcoCM=">
+        <field:display field="controlPagoServicio" id="s_com_raze_admingol_domain_PagoHechoServicio_controlPagoServicio" object="${pagohechoservicio}" z="NXNqDWU8nEBs7AHVhXOLfItsLUA="/>
+        <field:display field="monto" id="s_com_raze_admingol_domain_PagoHechoServicio_monto" object="${pagohechoservicio}" z="+h2Ug8iXWAk2On+V2unnGfm4AmU="/>
+        <field:display field="descuento" id="s_com_raze_admingol_domain_PagoHechoServicio_descuento" object="${pagohechoservicio}" z="ZIqpKPURQnHokZP9r55jzWU3DmM="/>
+        <field:display date="true" dateTimePattern="${pagoHechoServicio_fechapago_date_format}" field="fechaPago" id="s_com_raze_admingol_domain_PagoHechoServicio_fechaPago" object="${pagohechoservicio}" z="RELTW2RN0JvYJokDOXfAzsVXynw="/>
+        <field:display date="true" dateTimePattern="${pagoHechoServicio_fechavencimiento_date_format}" field="fechaVencimiento" id="s_com_raze_admingol_domain_PagoHechoServicio_fechaVencimiento" object="${pagohechoservicio}" z="/pResnU8NwCOuxahs9xWpPLq/oU="/>
+        <field:display field="activo" id="s_com_raze_admingol_domain_PagoHechoServicio_activo" object="${pagohechoservicio}" z="H3LAqgHSQ3+rY5j2r8cw1+D/HHU="/>
+        <field:display field="usuario" id="s_com_raze_admingol_domain_PagoHechoServicio_usuario" object="${pagohechoservicio}" z="fXIVJYlGkeBLGGu4l1aUQwytAiA="/>
+        <field:display date="true" dateTimePattern="${pagoHechoServicio_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_domain_PagoHechoServicio_fechaCreacion" object="${pagohechoservicio}" z="FyUCe2Uj9kHnRaYrl3C8P5ynsPM="/>
+        <field:display date="true" dateTimePattern="${pagoHechoServicio_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_domain_PagoHechoServicio_fechaModificacion" object="${pagohechoservicio}" z="fyp4wGIEHHlKMsPdtibUjolIcGM="/>
+    </page:show>
+</div>

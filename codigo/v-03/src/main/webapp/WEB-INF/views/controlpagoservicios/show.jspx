@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_admingol_domain_ControlPagoServicio" object="${controlpagoservicio}" path="/controlpagoservicios" z="FbA+R5Rn9Tf4vL7bmXXLJNpfq6A=">
+        <field:display field="empresa" id="s_com_raze_admingol_domain_ControlPagoServicio_empresa" object="${controlpagoservicio}" z="J4ghDAdVpsqQUZ0+4tfKE47/uzY="/>
+        <field:display field="tarfa" id="s_com_raze_admingol_domain_ControlPagoServicio_tarfa" object="${controlpagoservicio}" z="Dxslk+SF4VJ2iPaIsTqPNugxgHI="/>
+        <field:display field="cuenta" id="s_com_raze_admingol_domain_ControlPagoServicio_cuenta" object="${controlpagoservicio}" z="SJ2yoKXldfdYX2sxOg2SGRURIs8="/>
+        <field:display field="noReferencia" id="s_com_raze_admingol_domain_ControlPagoServicio_noReferencia" object="${controlpagoservicio}" z="1xsXb8nf0QR500eGY7ZBtbvVlfc="/>
+        <field:display field="tipoTarjeta" id="s_com_raze_admingol_domain_ControlPagoServicio_tipoTarjeta" object="${controlpagoservicio}" z="QHQsRvbsGH+szFkVxJrstV1DYa4="/>
+        <field:display field="noTC" id="s_com_raze_admingol_domain_ControlPagoServicio_noTC" object="${controlpagoservicio}" z="LK1q7CzvHa/EJoI8YEgcoynLonQ="/>
+        <field:display field="codigoSeguridad" id="s_com_raze_admingol_domain_ControlPagoServicio_codigoSeguridad" object="${controlpagoservicio}" z="NZvVQ9LNYsX5Fy3hrIMaceD7bp8="/>
+        <field:display field="fechaVencimientoTC" id="s_com_raze_admingol_domain_ControlPagoServicio_fechaVencimientoTC" object="${controlpagoservicio}" z="5U47c9bJGkomNzUuLx15921WDfY="/>
+        <field:display field="activo" id="s_com_raze_admingol_domain_ControlPagoServicio_activo" object="${controlpagoservicio}" z="O3YkPsYARDQRkCLVwfZdmDn1B+c="/>
+        <field:display field="usuario" id="s_com_raze_admingol_domain_ControlPagoServicio_usuario" object="${controlpagoservicio}" z="87xYhXWQ3mWedIgfm1pQ5ol7h6A="/>
+        <field:display date="true" dateTimePattern="${controlPagoServicio_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_domain_ControlPagoServicio_fechaCreacion" object="${controlpagoservicio}" z="T/EBhHIT8dqwKnBLUTcgr8gmewQ="/>
+        <field:display date="true" dateTimePattern="${controlPagoServicio_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_domain_ControlPagoServicio_fechaModificacion" object="${controlpagoservicio}" z="9xJVIZQx4msdUm0IbrDEnqBn9/4="/>
+    </page:show>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_admingol_domain_Empresa" object="${empresa}" path="/empresas" z="RATZGdX5WVlNRQsPs0md5qOnXEQ=">
+        <field:display field="nombre" id="s_com_raze_admingol_domain_Empresa_nombre" object="${empresa}" z="UhJJzE65l5X5zZvVZ2+vs/4BPdc="/>
+        <field:display field="nombreComercial" id="s_com_raze_admingol_domain_Empresa_nombreComercial" object="${empresa}" z="HcwxD3OOAkCavlA8ws5q2Uxaoq8="/>
+        <field:display field="domicilio" id="s_com_raze_admingol_domain_Empresa_domicilio" object="${empresa}" z="qS4RZZlm7BjHn5LeKOLp7pULdK4="/>
+        <field:display field="telefono" id="s_com_raze_admingol_domain_Empresa_telefono" object="${empresa}" z="ptWBP2WbMKi5PPR+mxLQcN7e2ao="/>
+        <field:display field="correoE" id="s_com_raze_admingol_domain_Empresa_correoE" object="${empresa}" z="YSSQSShFKXtOQR6IzXgD9OAGJGI="/>
+        <field:display field="logo" id="s_com_raze_admingol_domain_Empresa_logo" object="${empresa}" z="EHVPNGNl3hxTKzD88/SrEYvLbeM="/>
+        <field:display field="activo" id="s_com_raze_admingol_domain_Empresa_activo" object="${empresa}" z="Rv/ATQClwdbWNPC5lBJvYQc7KdA="/>
+        <field:display date="true" dateTimePattern="${empresa_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_domain_Empresa_fechaCreacion" object="${empresa}" z="6DQtScrkOExsHlENTm23vpOU0s0="/>
+        <field:display date="true" dateTimePattern="${empresa_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_domain_Empresa_fechaModificacion" object="${empresa}" z="X8w1EMbyzDfEImQtkODh12MBnCw="/>
+    </page:show>
+</div>

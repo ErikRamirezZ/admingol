@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_raze_admingol_domain_PagoHechoServicio" modelAttribute="pagoHechoServicio" path="/pagohechoservicios" versionField="Version" z="XdYj2/N/zoD41GLWxub1dJ/HMwQ=">
+        <field:select field="controlPagoServicio" id="c_com_raze_admingol_domain_PagoHechoServicio_controlPagoServicio" itemValue="id" items="${controlpagoservicios}" path="/controlpagoservicios" required="true" z="c0dHVmfP+jn9G470LGCJDBASfkA="/>
+        <field:input field="monto" id="c_com_raze_admingol_domain_PagoHechoServicio_monto" required="true" z="JhRPkKnKQP+JmG3jHpM6X/kF9Lk="/>
+        <field:input field="descuento" id="c_com_raze_admingol_domain_PagoHechoServicio_descuento" z="UAm4fUWx74SeuIfdndR/vsv8P3w="/>
+        <field:datetime dateTimePattern="${pagoHechoServicio_fechapago_date_format}" field="fechaPago" id="c_com_raze_admingol_domain_PagoHechoServicio_fechaPago" z="AviRrwLPFkTxrdtQFlgSZAk+avc="/>
+        <field:datetime dateTimePattern="${pagoHechoServicio_fechavencimiento_date_format}" field="fechaVencimiento" id="c_com_raze_admingol_domain_PagoHechoServicio_fechaVencimiento" z="yT8B83cK8tNVYTpqofN5Phy4EuQ="/>
+        <field:checkbox field="activo" id="c_com_raze_admingol_domain_PagoHechoServicio_activo" z="6AddKCW53aC22Xv7gSqrLUhnnZA="/>
+        <field:select field="usuario" id="c_com_raze_admingol_domain_PagoHechoServicio_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="cGfc0cBWipSyiGTilGKDsPqn4Wk="/>
+        <field:datetime dateTimePattern="${pagoHechoServicio_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_PagoHechoServicio_fechaCreacion" z="7XSNHsWmcyRbHGAl8cYLKM/w5x8="/>
+        <field:datetime dateTimePattern="${pagoHechoServicio_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_PagoHechoServicio_fechaModificacion" z="Olj+BSy4VyZLhk5bHW1kf1DJjiA="/>
+    </form:update>
+</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_raze_admingol_domain_Jugador" object="${jugador}" path="/jugadors" z="I/6DyBXVrDdU2t2gYHEP1xt5h9s=">
+        <field:display field="equipo" id="s_com_raze_admingol_domain_Jugador_equipo" object="${jugador}" z="3cx7q5OpeLi9xx9sOVVX4dKteQY="/>
+        <field:display field="nombre" id="s_com_raze_admingol_domain_Jugador_nombre" object="${jugador}" z="fcGhiYsQ54/3jX1KknBnV7wT0jI="/>
+        <field:display field="apellidoPaterno" id="s_com_raze_admingol_domain_Jugador_apellidoPaterno" object="${jugador}" z="G3AeClrsLjT3DvWkBmnkNbme/Dw="/>
+        <field:display field="apellidoMaterno" id="s_com_raze_admingol_domain_Jugador_apellidoMaterno" object="${jugador}" z="OYO3rZhl2i8H2QFw1J+wAtOYByo="/>
+        <field:display date="true" dateTimePattern="${jugador_fechanacimiento_date_format}" field="fechaNacimiento" id="s_com_raze_admingol_domain_Jugador_fechaNacimiento" object="${jugador}" z="/Ub2Ffi727myil3rbg/1piXHPa8="/>
+        <field:display field="foto" id="s_com_raze_admingol_domain_Jugador_foto" object="${jugador}" z="zY1OC6g1CtuCPuBGBIG9DCpFCdI="/>
+        <field:display field="domicilio" id="s_com_raze_admingol_domain_Jugador_domicilio" object="${jugador}" z="VoPPKisNkbH13tfpMKnrPImOCas="/>
+        <field:display field="telefono" id="s_com_raze_admingol_domain_Jugador_telefono" object="${jugador}" z="cwcyUh9l9cfCFXKq3PhjyV6tdc4="/>
+        <field:display field="correoE" id="s_com_raze_admingol_domain_Jugador_correoE" object="${jugador}" z="031n/5xjDfx0xyFG4/71TTKRPQA="/>
+        <field:display field="esDelegado" id="s_com_raze_admingol_domain_Jugador_esDelegado" object="${jugador}" z="KDGtoSmIXWnII99vUlxY/GUDr8U="/>
+        <field:display field="posicion" id="s_com_raze_admingol_domain_Jugador_posicion" object="${jugador}" z="/X6/Lv++R98F3iqlPM3JaxyGhWI="/>
+        <field:display field="status" id="s_com_raze_admingol_domain_Jugador_status" object="${jugador}" z="1dO8wXx+T3g7AuyW4dRg6Nv1P7E="/>
+        <field:display field="activo" id="s_com_raze_admingol_domain_Jugador_activo" object="${jugador}" z="BkGrG1V1diCMQJ+azcaFkigTvlE="/>
+        <field:display field="usuario" id="s_com_raze_admingol_domain_Jugador_usuario" object="${jugador}" z="UXk/1z7p+INiVQuR9iaOLYogUk0="/>
+        <field:display date="true" dateTimePattern="${jugador_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_domain_Jugador_fechaCreacion" object="${jugador}" z="eFOTZ+TLS1iCrxUB9ngFmHeBvFc="/>
+        <field:display date="true" dateTimePattern="${jugador_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_domain_Jugador_fechaModificacion" object="${jugador}" z="IuOVFpfZfApVelqiVoJiCRvwiiM="/>
+    </page:show>
+</div>

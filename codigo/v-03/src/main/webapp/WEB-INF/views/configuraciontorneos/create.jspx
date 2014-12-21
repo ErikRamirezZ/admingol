@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_raze_admingol_domain_ConfiguracionTorneo" modelAttribute="configuracionTorneo" path="/configuraciontorneos" render="${empty dependencies}" z="5syvttC3Sgz0T6dCpeGKou718OY=">
+        <field:select field="torneo" id="c_com_raze_admingol_domain_ConfiguracionTorneo_torneo" itemValue="id" items="${torneos}" path="/torneos" required="true" z="l2XoOoS6d8NkIR7h4XhIvQK4KEg="/>
+        <field:checkbox field="inscripcion" id="c_com_raze_admingol_domain_ConfiguracionTorneo_inscripcion" z="7R3CEkooWBUun7BZd68ed8Lp8QY="/>
+        <field:input decimalMax="2" field="costoInscripcion" id="c_com_raze_admingol_domain_ConfiguracionTorneo_costoInscripcion" z="NDPcHyUGcOtcnx38++zGggLVcsk="/>
+        <field:input field="numeroParcialidadesInscripcion" id="c_com_raze_admingol_domain_ConfiguracionTorneo_numeroParcialidadesInscripcion" z="nzw1V68Ow/W03ZlK6dFPBrCvzJM="/>
+        <field:select field="tipoCobroTorneo" id="c_com_raze_admingol_domain_ConfiguracionTorneo_tipoCobroTorneo" items="${tipocobrotorneos}" path="tipocobrotorneos" z="kSLLv4VwI2+WIioJQ5AUVoPQEz4="/>
+        <field:input decimalMax="2" field="costo" id="c_com_raze_admingol_domain_ConfiguracionTorneo_costo" z="Zog+vAyxgc/Q4TGSYncUgcx3wOY="/>
+        <field:input field="numeroParcialidadesTorneo" id="c_com_raze_admingol_domain_ConfiguracionTorneo_numeroParcialidadesTorneo" z="AFlkPdM/rCMuRjXhW8SYM28NFbw="/>
+        <field:input field="numeroJugadoresXEquipo" id="c_com_raze_admingol_domain_ConfiguracionTorneo_numeroJugadoresXEquipo" z="5LQjwBEV++7boLDL/keD8Zlzj+w="/>
+        <field:select field="diasJuego" id="c_com_raze_admingol_domain_ConfiguracionTorneo_diasJuego" items="${diasjuegoes}" path="diasjuegoes" z="PSU9ZxxmlYI4GI/U5A/iMqzb3eI="/>
+        <field:select field="canchasJuego" id="c_com_raze_admingol_domain_ConfiguracionTorneo_canchasJuego" itemValue="id" items="${canchas}" multiple="true" path="/canchas" z="f6hjgCeEz+CSlPF5MdizB/arXoo="/>
+        <field:input field="tiempoDuracionPartido" id="c_com_raze_admingol_domain_ConfiguracionTorneo_tiempoDuracionPartido" z="Vt8n3OuHv9xyqywvzaGZRPdsrgo="/>
+        <field:datetime dateTimePattern="${configuracionTorneo_fechalimiteregistro_date_format}" field="fechaLimiteRegistro" id="c_com_raze_admingol_domain_ConfiguracionTorneo_fechaLimiteRegistro" z="inVR0K4UKD/Qufjozzkk16DLby4="/>
+        <field:input field="costoArbitroPrincipal" id="c_com_raze_admingol_domain_ConfiguracionTorneo_costoArbitroPrincipal" z="G80N2q1KdG7ykYYRgCqDO0XVwxY="/>
+        <field:input field="costoArbitroAuxiliar" id="c_com_raze_admingol_domain_ConfiguracionTorneo_costoArbitroAuxiliar" z="538qgo29q7wGbDB1nAimry+jGZc="/>
+        <field:checkbox field="activo" id="c_com_raze_admingol_domain_ConfiguracionTorneo_activo" z="D6uPSOm4BNLIY2lnUiemTt1b5jo="/>
+        <field:select field="usuario" id="c_com_raze_admingol_domain_ConfiguracionTorneo_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="ODLWc6Jflfq8WBXP6RmtX5XJdxI="/>
+        <field:datetime dateTimePattern="${configuracionTorneo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_ConfiguracionTorneo_fechaCreacion" z="o8OcflNpPURsGnghLl8x29PSRN0="/>
+        <field:datetime dateTimePattern="${configuracionTorneo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_ConfiguracionTorneo_fechaModificacion" z="kvyw41BcCNAlrg5Fb0sAlATVpAs="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_raze_admingol_domain_ConfiguracionTorneo" render="${not empty dependencies}" z="YI/MaKgsG2Ez0tQtWUI7CkbEJY0="/>
+</div>

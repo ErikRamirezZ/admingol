@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_domain_PagoHechoServicio" items="${pagohechoservicios}" z="hOiytZ+UfbrNt5loZ1BOHIHgmBw=">
+        <table:table data="${pagohechoservicios}" id="l_com_raze_admingol_domain_PagoHechoServicio" path="/pagohechoservicios" z="GR4nbleANTIV1NHtz83lfYzmK38=">
+            <table:column id="c_com_raze_admingol_domain_PagoHechoServicio_controlPagoServicio" property="controlPagoServicio" z="FeJCs9NK3fsiT6W9SkWykfxdDVk="/>
+            <table:column id="c_com_raze_admingol_domain_PagoHechoServicio_monto" property="monto" z="NL2Idj92AuZAwXVfjh2rnmBWyGo="/>
+            <table:column id="c_com_raze_admingol_domain_PagoHechoServicio_descuento" property="descuento" z="Vlg+DEF7LOmBbadvwPl56Rp8xJY="/>
+            <table:column date="true" dateTimePattern="${pagoHechoServicio_fechapago_date_format}" id="c_com_raze_admingol_domain_PagoHechoServicio_fechaPago" property="fechaPago" z="v5DWNW9R2hrO+Dl+njCtcKJlNCc="/>
+            <table:column date="true" dateTimePattern="${pagoHechoServicio_fechavencimiento_date_format}" id="c_com_raze_admingol_domain_PagoHechoServicio_fechaVencimiento" property="fechaVencimiento" z="4sKTu13gKyXeBWVBoXXlcCzq/Oc="/>
+            <table:column id="c_com_raze_admingol_domain_PagoHechoServicio_activo" property="activo" z="wGcsWbHrfC9XnaWGlnSxxS/ws2c="/>
+        </table:table>
+    </page:list>
+</div>

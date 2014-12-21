@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_domain_ConfiguracionNotificaciones" items="${configuracionnotificacioneses}" z="Ld9+deW7lClNVhuFx6D8ryBV/Pw=">
+        <table:table data="${configuracionnotificacioneses}" id="l_com_raze_admingol_domain_ConfiguracionNotificaciones" path="/configuracionnotificacioneses" z="89qiazauw4JyZI3CY7lQ+cGIrCM=">
+            <table:column id="c_com_raze_admingol_domain_ConfiguracionNotificaciones_usuarios" property="usuarios" z="5Sl/yVAjXufi1tuDqCm4G2iIsyQ="/>
+            <table:column id="c_com_raze_admingol_domain_ConfiguracionNotificaciones_mensaje" property="mensaje" z="WNtg07Rd2MTX3xeUrrnUQfdTrVQ="/>
+            <table:column date="true" dateTimePattern="${configuracionNotificaciones_fecha_hora_date_format}" id="c_com_raze_admingol_domain_ConfiguracionNotificaciones_fecha_hora" property="fecha_hora" z="aI9w5x33tUW5lpqx7d35wQc7m9Q="/>
+            <table:column id="c_com_raze_admingol_domain_ConfiguracionNotificaciones_viaNotificacion" property="viaNotificacion" z="T+Wxe/OxFXCjNlFFdtvOI85PdDs="/>
+            <table:column id="c_com_raze_admingol_domain_ConfiguracionNotificaciones_repetir" property="repetir" z="M/Szo2pMKYfk//zOefmt+llxY8o="/>
+            <table:column id="c_com_raze_admingol_domain_ConfiguracionNotificaciones_activo" property="activo" z="PszNa4tXmo0RcdhoRzv/bn6yEB4="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_domain_Partido" items="${partidoes}" z="Awu5nN80XWV3ny/sTr0NSS0JeRw=">
+        <table:table data="${partidoes}" id="l_com_raze_admingol_domain_Partido" path="/partidoes" z="w+RTkAZXD8LPcY2/hU81+cN54XI=">
+            <table:column id="c_com_raze_admingol_domain_Partido_cancha" property="cancha" z="eSwn7+O5Ut8Zc74u3xNdAmwvMJM="/>
+            <table:column id="c_com_raze_admingol_domain_Partido_arbitros" property="arbitros" z="9y/dZa+Ix8pLWDGa3hd5FXFtoz4="/>
+            <table:column id="c_com_raze_admingol_domain_Partido_torneoEquipoLocal" property="torneoEquipoLocal" z="TbTn+DChvWajJKltvIBlCcblOnA="/>
+            <table:column id="c_com_raze_admingol_domain_Partido_equipoLocal" property="equipoLocal" z="ki6Bfpz+yMICY/iBTnrHf9OvD/s="/>
+            <table:column id="c_com_raze_admingol_domain_Partido_torneoEquipoVisitante" property="torneoEquipoVisitante" z="SvNI70bFqeleDkcfRJERN/9bVsU="/>
+            <table:column id="c_com_raze_admingol_domain_Partido_equipoVisitante" property="equipoVisitante" z="zuKOWq++4d8nAr5YfIc4MNqy+YY="/>
+        </table:table>
+    </page:list>
+</div>

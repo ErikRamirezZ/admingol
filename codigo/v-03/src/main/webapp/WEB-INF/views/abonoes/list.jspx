@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_raze_admingol_domain_Abono" items="${abonoes}" z="/RAlPHVg6JKAALKiRc9QBNs1vlE=">
+        <table:table data="${abonoes}" id="l_com_raze_admingol_domain_Abono" path="/abonoes" z="Lnp4OPJULNKuZh8N3NrpKe+jJ7c=">
+            <table:column id="c_com_raze_admingol_domain_Abono_cargo" property="cargo" z="BkQxzjjDmG3P2kEb/KW38t4h9Xg="/>
+            <table:column id="c_com_raze_admingol_domain_Abono_metodoPago" property="metodoPago" z="TS4eXiqdXfvG7NGCS5axuFFBr+s="/>
+            <table:column id="c_com_raze_admingol_domain_Abono_descuento" property="descuento" z="BePldaeeinqAomN1OrvcyijzO5E="/>
+            <table:column id="c_com_raze_admingol_domain_Abono_observaciones" property="observaciones" z="p/1/psPVXvDsaFoWe4QaNJ/BI0k="/>
+            <table:column id="c_com_raze_admingol_domain_Abono_status" property="status" z="XOjSh/juHcZUOo7xZxNniHPstJY="/>
+            <table:column id="c_com_raze_admingol_domain_Abono_usuario" property="usuario" z="4H96pAwtVSVMQP32EVbdB8mAbmM="/>
+        </table:table>
+    </page:list>
+</div>
