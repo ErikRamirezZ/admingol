@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <form:find finderName="ByInscripcionAndActivo" id="ff_com_raze_admingol_domain_ConfiguracionTorneo" path="/configuraciontorneos" z="uCbKJhnhw632B3wPQxXZ3sCsQUE=">
-        <field:checkbox disableFormBinding="true" field="inscripcion" id="f_com_raze_admingol_domain_ConfiguracionTorneo_inscripcion" z="zI4rPLfiar7C9DB0k34la1aQfUU="/>
-        <field:checkbox disableFormBinding="true" field="activo" id="f_com_raze_admingol_domain_ConfiguracionTorneo_activo" z="VCWDCeGkU/sFcGl0onNUhs22WM8="/>
-    </form:find>
-</div>
