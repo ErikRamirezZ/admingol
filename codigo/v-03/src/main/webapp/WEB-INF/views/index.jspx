@@ -5,10 +5,16 @@
 	<jsp:directive.page contentType="text/html;charset=UTF-8" />
 	<jsp:output omit-xml-declaration="yes" />
 	
-  <spring:url value="images/carousel-01.png" var="img1"/>
-  <spring:url value="images/carousel-02.png" var="img2"/>
-  <spring:url value="images/carousel-03.png" var="img3"/>
-  <spring:url value="images/carousel-04.png" var="img4"/>
+	<spring:url value="/styles/carrusel.css" var="carrusel_css"/>
+	<link rel="stylesheet" type="text/css" href="${carrusel_css}"/>
+	
+  <spring:url value="images/carousel-01.jpg" var="img1"/>
+  <spring:url value="images/carousel-02.jpg" var="img2"/>
+  <spring:url value="images/carousel-03.jpg" var="img3"/>
+  <spring:url value="images/carousel-04.jpg" var="img4"/>
+	
+	<spring:url value="/scripts/carrusel.js" var="carrusel_js"/>
+	<script src="${carrusel_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 	
 	<spring:message var="app_name" code="application_name"
 		htmlEscape="false" />
@@ -21,21 +27,25 @@
 		<p>
 			<spring:message code="welcome_text" />
 		</p>
-		<div id="carrusel" class="carrusel">
+		<div id="carrusel_wrapper" class="carrusel_wrapper">
 
-			<div class="item">
-				<img src="${img1}" alt="The Last of us">
+			<div class="item actual" id="item1">
+				<img src="${img1}" alt="The Last of us"/>
 			</div>
-			<div class="item">
-				<img src="${img2}" alt="GTA V">
+			<div class="item oculto" id="item2">
+				<img src="${img2}" alt="GTA V"/>
 			</div>
-      <div class="item">
-        <img src="${img3}" alt="Mirror Edge">
+      <div class="item oculto" id="item3">
+        <img src="${img3}" alt="Mirror Edge"/>
       </div>
-      <div class="item">
-        <img src="${img4}" alt="Mirror Edge">
+      <div class="item oculto" id="item4">
+        <img src="${img4}" alt="Mirror Edge"/>
       </div>
 
 		</div>
+		<input type="button" value="anterior" id="back" class="btns"/>
+		<input type="button" value="siguiente" id="next" class="btns"/>
+    
 	</util:panel>
 </div>
+

@@ -2,81 +2,91 @@
 <div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
-    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
-        <menu:category id="c_cedulapartido" z="1LAxKp/dW+GW2FOYRyLjVPkk60Q=">
-            <menu:item id="i_cedulapartido_new" messageCode="global_menu_new" url="/cedulapartidoes?form" z="sgQgShRh/8jB1dfSlrLDz47zZI0="/>
-            <menu:item id="i_cedulapartido_list" messageCode="global_menu_list" url="/cedulapartidoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="iLi9Cxg5oeePALgHCy/OlEjxEcs="/>
-        </menu:category>
-        <menu:category id="c_empresa" z="Xy2UIEQBwGL74OghlgyDNqDXG44=">
-            <menu:item id="i_empresa_new" messageCode="global_menu_new" url="/empresas?form" z="TBXez8QM+aB2tzcjHN1lQJYrewc="/>
-            <menu:item id="i_empresa_list" messageCode="global_menu_list" url="/empresas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/YQYlSdehDz3lrOGSSpWZYe++Zk="/>
-        </menu:category>
-        <menu:category id="c_sucursal" z="qN2r56zm5K6QnxDWJ00gRZ+bu84=">
-            <menu:item id="i_sucursal_new" messageCode="global_menu_new" url="/sucursals?form" z="6dxGCPOx1Gd5cL3kYmOux/+989c="/>
-            <menu:item id="i_sucursal_list" messageCode="global_menu_list" url="/sucursals?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Rkn6g9K8ST6KwVdqSD+GGmucSdU="/>
-        </menu:category>
-        <menu:category id="c_horario" z="wwMQUILt/puEegMlBIpsdYOrEDA=">
-            <menu:item id="i_horario_new" messageCode="global_menu_new" url="/horarios?form" z="VliB2jFUrOQQbJkrlvuYvfN28XY="/>
-            <menu:item id="i_horario_list" messageCode="global_menu_list" url="/horarios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="rHpyuay2/HmCjKYCqS2WaJXLYQ8="/>
-        </menu:category>
-        <menu:category id="c_usuario" z="g6oG0656PcsmmvUYeBtpgiQROck=">
-            <menu:item id="i_usuario_new" messageCode="global_menu_new" url="/usuarios?form" z="RG1gCsiZQjg1HLDzXbHKht6yDkw="/>
-            <menu:item id="i_usuario_list" messageCode="global_menu_list" url="/usuarios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="P7ZIPrcTTBR41JYD0QldbYgsZrM="/>
-        </menu:category>
-        <menu:category id="c_alineacion" z="HcfIQY0Fnv+trM/s0WB8JpFykn0=">
-            <menu:item id="i_alineacion_new" messageCode="global_menu_new" url="/alineacions?form" z="zrI15mOa2D4DZfzjLJpagyqYwV0="/>
-            <menu:item id="i_alineacion_list" messageCode="global_menu_list" url="/alineacions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kXrf7M/WIBMkcjuBams/0b9vDfI="/>
-        </menu:category>
-        <menu:category id="c_torneo" z="Xjy5A0or4vG6vbTqn6rhxV9JsiY=">
-            <menu:item id="i_torneo_new" messageCode="global_menu_new" url="/torneos?form" z="MUYrHLKrU+r0QFqxdoDUe+aclWw="/>
-            <menu:item id="i_torneo_list" messageCode="global_menu_list" url="/torneos?page=1&amp;size=${empty param.size ? 10 : param.size}" z="WLL42KQVEn92DV7DEKNOlevUVv4="/>
-        </menu:category>
-        <menu:category id="c_controlpagoservicio" z="omYUg2oc0dj0xHRR/Ilk99+ZHWc=">
-            <menu:item id="i_controlpagoservicio_new" messageCode="global_menu_new" url="/controlpagoservicios?form" z="yl58+s3YBOeABzMn0deSbgTjBds="/>
-            <menu:item id="i_controlpagoservicio_list" messageCode="global_menu_list" url="/controlpagoservicios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="bIhIAg/u+jtgfb7fVcg7QfWt2LA="/>
-        </menu:category>
-        <menu:category id="c_configuracionnotificaciones" z="wPss84qGFS0xqp3AONWOBgAQw9w=">
-            <menu:item id="i_configuracionnotificaciones_new" messageCode="global_menu_new" url="/configuracionnotificacioneses?form" z="GwO20tCSH/Pk4qxTx16U4yMjB7Y="/>
-            <menu:item id="i_configuracionnotificaciones_list" messageCode="global_menu_list" url="/configuracionnotificacioneses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="XlSk0yilcXGbnAppmc38SrSbPhY="/>
-        </menu:category>
-        <menu:category id="c_abono" z="1rq/0DZ2QlAFLA9GH9ShzVTKVQo=">
-            <menu:item id="i_abono_new" messageCode="global_menu_new" url="/abonoes?form" z="/g1rZOnFPzWqiiyzFQro0JGlZt8="/>
-            <menu:item id="i_abono_list" messageCode="global_menu_list" url="/abonoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="5c3kFvwPzQwPgR6qoD3BFQFkpzI="/>
-        </menu:category>
-        <menu:category id="c_cargo" z="RkgM1RFJmYcsCrUrSD/Wv8nbL2A=">
-            <menu:item id="i_cargo_new" messageCode="global_menu_new" url="/cargoes?form" z="qMLzugfFynKkMvazLt0WjeDGg/0="/>
-            <menu:item id="i_cargo_list" messageCode="global_menu_list" url="/cargoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="szKeASlLTApTFwfZGlrE8sQ2teI="/>
-        </menu:category>
-        <menu:category id="c_jugador" z="9DpPm6uw05uI7f7futD7J6LUbqg=">
-            <menu:item id="i_jugador_new" messageCode="global_menu_new" url="/jugadors?form" z="PEIdlK0KjDfSbIpPZLSfV/ypjeM="/>
-            <menu:item id="i_jugador_list" messageCode="global_menu_list" url="/jugadors?page=1&amp;size=${empty param.size ? 10 : param.size}" z="E0yo6z/UGOawkLyXTWSuJzyaaD8="/>
-        </menu:category>
-        <menu:category id="c_configuraciontorneo" z="auBnhrcx2gmAy1iWkbGsbMf3FJc=">
-            <menu:item id="i_configuraciontorneo_new" messageCode="global_menu_new" url="/configuraciontorneos?form" z="NldFBip+P+4eVeMA6M64RxXgV0k="/>
-            <menu:item id="i_configuraciontorneo_list" messageCode="global_menu_list" url="/configuraciontorneos?page=1&amp;size=${empty param.size ? 10 : param.size}" z="glIQ9WZ9z2gAH4eTdBtGTZO+8BU="/>
-        </menu:category>
-        <menu:category id="c_estadisticas" z="ffPx6Jld1H6Oxq9W5CdoYjrUruw=">
-            <menu:item id="i_estadisticas_new" messageCode="global_menu_new" url="/estadisticases?form" z="I0J3TE/0G5ubuN+MjzFzZGwZeHE="/>
-            <menu:item id="i_estadisticas_list" messageCode="global_menu_list" url="/estadisticases?page=1&amp;size=${empty param.size ? 10 : param.size}" z="RNFjPPOiGBSGtYpxsvBg59Sehb8="/>
-        </menu:category>
-        <menu:category id="c_cancha" z="32bRFO8Dcpe8AX8UAmXm/Mp57RU=">
-            <menu:item id="i_cancha_new" messageCode="global_menu_new" url="/canchas?form" z="oZaGCxORixLAqVkvP6ia+JKfhII="/>
-            <menu:item id="i_cancha_list" messageCode="global_menu_list" url="/canchas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="sR+DW1bFaT1g9CZhNpcjhFV7GdM="/>
-        </menu:category>
-        <menu:category id="c_pagohechoservicio" z="OZK7eVcilWOU1WNLAO7H+dQjmsE=">
-            <menu:item id="i_pagohechoservicio_new" messageCode="global_menu_new" url="/pagohechoservicios?form" z="zBdqdGSEJC+FUf7vkKb3chCSpFI="/>
-            <menu:item id="i_pagohechoservicio_list" messageCode="global_menu_list" url="/pagohechoservicios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7TuVnYiSlT0n3WwIGigvj/6eO/I="/>
-        </menu:category>
-        <menu:category id="c_partido" z="/lP1jvdnWQxpyeByg9cpBVLSslQ=">
-            <menu:item id="i_partido_new" messageCode="global_menu_new" url="/partidoes?form" z="Xg9y5lhYECVB4HPix+20GfIUoUY="/>
-            <menu:item id="i_partido_list" messageCode="global_menu_list" url="/partidoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="jmxAmlR7UYl6HV3YV85Z91DgVV8="/>
-        </menu:category>
-        <menu:category id="c_equipo" z="MW6b0dyj2ozO9yp3D621gV1cR2Q=">
-            <menu:item id="i_equipo_new" messageCode="global_menu_new" url="/equipoes?form" z="6sZphUjzCLhVSt0KKwI1gapzN/g="/>
-            <menu:item id="i_equipo_list" messageCode="global_menu_list" url="/equipoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="1eDhyr/G9kztJAE1vSXgcjQoCcM="/>
-        </menu:category>
-        <menu:category id="c_view" z="HjmI4Chx/kBYfS/6HjBLbCA+XpU=">
-            <menu:item id="i_view___reportsreportes_id" messageCode="global_generic" url="//reports/reportes" z="H+Mwbc0b5PxhWFFaRMZnNUU55v8="/>
-        </menu:category>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=" >
+			<li class='active'><a href='index.html'>Home</a></li>
+			<li class='has-sub '><a href='#'>Administracion</a>
+        <ul>
+	        <menu:category id="c_cedulapartido" z="1LAxKp/dW+GW2FOYRyLjVPkk60Q=" >
+	            <menu:item id="i_cedulapartido_new" messageCode="global_menu_new" url="/cedulapartidoes?form" z="sgQgShRh/8jB1dfSlrLDz47zZI0="/>
+	            <menu:item id="i_cedulapartido_list" messageCode="global_menu_list" url="/cedulapartidoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="iLi9Cxg5oeePALgHCy/OlEjxEcs="/>
+	        </menu:category>
+	        <menu:category id="c_empresa" z="Xy2UIEQBwGL74OghlgyDNqDXG44=">
+	            <menu:item id="i_empresa_new" messageCode="global_menu_new" url="/empresas?form" z="TBXez8QM+aB2tzcjHN1lQJYrewc="/>
+	            <menu:item id="i_empresa_list" messageCode="global_menu_list" url="/empresas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/YQYlSdehDz3lrOGSSpWZYe++Zk="/>
+	        </menu:category>
+	        <menu:category id="c_sucursal" z="qN2r56zm5K6QnxDWJ00gRZ+bu84=">
+	            <menu:item id="i_sucursal_new" messageCode="global_menu_new" url="/sucursals?form" z="6dxGCPOx1Gd5cL3kYmOux/+989c="/>
+	            <menu:item id="i_sucursal_list" messageCode="global_menu_list" url="/sucursals?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Rkn6g9K8ST6KwVdqSD+GGmucSdU="/>
+	        </menu:category>
+	        <menu:category id="c_horario" z="wwMQUILt/puEegMlBIpsdYOrEDA=">
+	            <menu:item id="i_horario_new" messageCode="global_menu_new" url="/horarios?form" z="VliB2jFUrOQQbJkrlvuYvfN28XY="/>
+	            <menu:item id="i_horario_list" messageCode="global_menu_list" url="/horarios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="rHpyuay2/HmCjKYCqS2WaJXLYQ8="/>
+	        </menu:category>
+	        <menu:category id="c_usuario" z="g6oG0656PcsmmvUYeBtpgiQROck=">
+	            <menu:item id="i_usuario_new" messageCode="global_menu_new" url="/usuarios?form" z="RG1gCsiZQjg1HLDzXbHKht6yDkw="/>
+	            <menu:item id="i_usuario_list" messageCode="global_menu_list" url="/usuarios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="P7ZIPrcTTBR41JYD0QldbYgsZrM="/>
+	        </menu:category>
+	        <menu:category id="c_alineacion" z="HcfIQY0Fnv+trM/s0WB8JpFykn0=">
+	            <menu:item id="i_alineacion_new" messageCode="global_menu_new" url="/alineacions?form" z="zrI15mOa2D4DZfzjLJpagyqYwV0="/>
+	            <menu:item id="i_alineacion_list" messageCode="global_menu_list" url="/alineacions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kXrf7M/WIBMkcjuBams/0b9vDfI="/>
+	        </menu:category>
+	        <menu:category id="c_torneo" z="Xjy5A0or4vG6vbTqn6rhxV9JsiY=">
+	            <menu:item id="i_torneo_new" messageCode="global_menu_new" url="/torneos?form" z="MUYrHLKrU+r0QFqxdoDUe+aclWw="/>
+	            <menu:item id="i_torneo_list" messageCode="global_menu_list" url="/torneos?page=1&amp;size=${empty param.size ? 10 : param.size}" z="WLL42KQVEn92DV7DEKNOlevUVv4="/>
+	        </menu:category>
+	        <menu:category id="c_partido" z="/lP1jvdnWQxpyeByg9cpBVLSslQ=">
+	            <menu:item id="i_partido_new" messageCode="global_menu_new" url="/partidoes?form" z="Xg9y5lhYECVB4HPix+20GfIUoUY="/>
+	            <menu:item id="i_partido_list" messageCode="global_menu_list" url="/partidoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="jmxAmlR7UYl6HV3YV85Z91DgVV8="/>
+	        </menu:category>
+	        <menu:category id="c_jugador" z="9DpPm6uw05uI7f7futD7J6LUbqg=">
+	            <menu:item id="i_jugador_new" messageCode="global_menu_new" url="/jugadors?form" z="PEIdlK0KjDfSbIpPZLSfV/ypjeM="/>
+	            <menu:item id="i_jugador_list" messageCode="global_menu_list" url="/jugadors?page=1&amp;size=${empty param.size ? 10 : param.size}" z="E0yo6z/UGOawkLyXTWSuJzyaaD8="/>
+	        </menu:category>
+	        <menu:category id="c_estadisticas" z="ffPx6Jld1H6Oxq9W5CdoYjrUruw=">
+	            <menu:item id="i_estadisticas_new" messageCode="global_menu_new" url="/estadisticases?form" z="I0J3TE/0G5ubuN+MjzFzZGwZeHE="/>
+	            <menu:item id="i_estadisticas_list" messageCode="global_menu_list" url="/estadisticases?page=1&amp;size=${empty param.size ? 10 : param.size}" z="RNFjPPOiGBSGtYpxsvBg59Sehb8="/>
+	        </menu:category>
+	        <menu:category id="c_cancha" z="32bRFO8Dcpe8AX8UAmXm/Mp57RU=">
+	            <menu:item id="i_cancha_new" messageCode="global_menu_new" url="/canchas?form" z="oZaGCxORixLAqVkvP6ia+JKfhII="/>
+	            <menu:item id="i_cancha_list" messageCode="global_menu_list" url="/canchas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="sR+DW1bFaT1g9CZhNpcjhFV7GdM="/>
+	        </menu:category>
+	        <menu:category id="c_equipo" z="MW6b0dyj2ozO9yp3D621gV1cR2Q=">
+	            <menu:item id="i_equipo_new" messageCode="global_menu_new" url="/equipoes?form" z="6sZphUjzCLhVSt0KKwI1gapzN/g="/>
+	            <menu:item id="i_equipo_list" messageCode="global_menu_list" url="/equipoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="1eDhyr/G9kztJAE1vSXgcjQoCcM="/>
+	        </menu:category>
+        </ul>
+      </li>
+      <li class='has-sub '><a href='#'>Configuracion</a>
+        <ul>
+	        <menu:category id="c_controlpagoservicio" z="omYUg2oc0dj0xHRR/Ilk99+ZHWc=">
+	            <menu:item id="i_controlpagoservicio_new" messageCode="global_menu_new" url="/controlpagoservicios?form" z="yl58+s3YBOeABzMn0deSbgTjBds="/>
+	            <menu:item id="i_controlpagoservicio_list" messageCode="global_menu_list" url="/controlpagoservicios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="bIhIAg/u+jtgfb7fVcg7QfWt2LA="/>
+	        </menu:category>
+	        <menu:category id="c_configuracionnotificaciones" z="wPss84qGFS0xqp3AONWOBgAQw9w=">
+	            <menu:item id="i_configuracionnotificaciones_new" messageCode="global_menu_new" url="/configuracionnotificacioneses?form" z="GwO20tCSH/Pk4qxTx16U4yMjB7Y="/>
+	            <menu:item id="i_configuracionnotificaciones_list" messageCode="global_menu_list" url="/configuracionnotificacioneses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="XlSk0yilcXGbnAppmc38SrSbPhY="/>
+	        </menu:category>
+	        <menu:category id="c_abono" z="1rq/0DZ2QlAFLA9GH9ShzVTKVQo=">
+	            <menu:item id="i_abono_new" messageCode="global_menu_new" url="/abonoes?form" z="/g1rZOnFPzWqiiyzFQro0JGlZt8="/>
+	            <menu:item id="i_abono_list" messageCode="global_menu_list" url="/abonoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="5c3kFvwPzQwPgR6qoD3BFQFkpzI="/>
+	        </menu:category>
+	        <menu:category id="c_cargo" z="RkgM1RFJmYcsCrUrSD/Wv8nbL2A=">
+	            <menu:item id="i_cargo_new" messageCode="global_menu_new" url="/cargoes?form" z="qMLzugfFynKkMvazLt0WjeDGg/0="/>
+	            <menu:item id="i_cargo_list" messageCode="global_menu_list" url="/cargoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="szKeASlLTApTFwfZGlrE8sQ2teI="/>
+	        </menu:category>
+	        <menu:category id="c_configuraciontorneo" z="auBnhrcx2gmAy1iWkbGsbMf3FJc=">
+	            <menu:item id="i_configuraciontorneo_new" messageCode="global_menu_new" url="/configuraciontorneos?form" z="NldFBip+P+4eVeMA6M64RxXgV0k="/>
+	            <menu:item id="i_configuraciontorneo_list" messageCode="global_menu_list" url="/configuraciontorneos?page=1&amp;size=${empty param.size ? 10 : param.size}" z="glIQ9WZ9z2gAH4eTdBtGTZO+8BU="/>
+	        </menu:category>
+	        <menu:category id="c_pagohechoservicio" z="OZK7eVcilWOU1WNLAO7H+dQjmsE=">
+	            <menu:item id="i_pagohechoservicio_new" messageCode="global_menu_new" url="/pagohechoservicios?form" z="zBdqdGSEJC+FUf7vkKb3chCSpFI="/>
+	            <menu:item id="i_pagohechoservicio_list" messageCode="global_menu_list" url="/pagohechoservicios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7TuVnYiSlT0n3WwIGigvj/6eO/I="/>
+	        </menu:category>
+	        <menu:category id="c_view" z="HjmI4Chx/kBYfS/6HjBLbCA+XpU=">
+	            <menu:item id="i_view___reportsreportes_id" messageCode="global_generic" url="//reports/reportes" z="H+Mwbc0b5PxhWFFaRMZnNUU55v8="/>
+	        </menu:category>
+        </ul>
+      </li>
+      
     </menu:menu>
 </div>
