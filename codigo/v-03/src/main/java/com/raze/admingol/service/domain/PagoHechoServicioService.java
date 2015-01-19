@@ -1,9 +1,7 @@
 package com.raze.admingol.service.domain;
 import com.raze.admingol.domain.PagoHechoServicio;
 import java.util.List;
-import org.springframework.roo.addon.layers.service.RooService;
 
-@RooService(domainTypes = { com.raze.admingol.domain.PagoHechoServicio.class })
 public interface PagoHechoServicioService {
 
 	public abstract long countAllPagoHechoServicios();

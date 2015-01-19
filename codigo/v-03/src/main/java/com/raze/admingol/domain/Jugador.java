@@ -1,9 +1,6 @@
 package com.raze.admingol.domain;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.springframework.roo.addon.javabean.RooJavaBean;
-import org.springframework.roo.addon.jpa.entity.RooJpaEntity;
-import org.springframework.roo.addon.tostring.RooToString;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 import java.util.Collection;
@@ -19,19 +16,13 @@ import javax.persistence.TemporalType;
 import javax.persistence.Version;
 import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.Lob;
-import org.springframework.roo.classpath.operations.jsr303.RooUploadedFile;
 import com.raze.admingol.catalog.Posicion;
 import javax.persistence.Enumerated;
 import com.raze.admingol.catalog.StatusEquipoJugador;
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
-import org.springframework.roo.addon.json.RooJson;
 
 @Entity
-@RooJavaBean
-@RooToString
-@RooJpaEntity
-@RooJson(deepSerialize = true)
 public class Jugador {
 
     /**
@@ -61,7 +52,6 @@ public class Jugador {
 
     /**
      */
-    @RooUploadedFile(contentType = "image/jpeg", autoUpload = true)
     @Lob
     private byte[] foto;
 

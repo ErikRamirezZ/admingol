@@ -11,16 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.Version;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.springframework.roo.addon.javabean.RooJavaBean;
-import org.springframework.roo.addon.jpa.entity.RooJpaEntity;
-import org.springframework.roo.addon.tostring.RooToString;
-import org.springframework.roo.addon.json.RooJson;
 
 @Entity
-@RooJavaBean
-@RooToString
-@RooJpaEntity
-@RooJson(deepSerialize = true)
 public class Rol {
 
 	public String toJson() {

@@ -1,9 +1,6 @@
 package com.raze.admingol.domain;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.springframework.roo.addon.javabean.RooJavaBean;
-import org.springframework.roo.addon.jpa.entity.RooJpaEntity;
-import org.springframework.roo.addon.tostring.RooToString;
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
 import javax.persistence.ManyToOne;
@@ -23,13 +20,8 @@ import java.util.Collection;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.ManyToMany;
-import org.springframework.roo.addon.json.RooJson;
 
 @Entity
-@RooJavaBean
-@RooToString
-@RooJpaEntity
-@RooJson(deepSerialize = true)
 public class Torneo {
 
     /**

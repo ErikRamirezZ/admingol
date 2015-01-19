@@ -484,3 +484,7 @@ fieldset th {
 	height: 11px;
 	width: 16px;
 }
+
+.field_file {
+	width: 180px;
+}

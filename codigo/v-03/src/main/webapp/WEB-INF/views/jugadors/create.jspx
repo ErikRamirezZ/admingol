@@ -8,17 +8,14 @@
         <field:input field="apellidoPaterno" id="c_com_raze_admingol_domain_Jugador_apellidoPaterno" z="3X6F3VqzneVDq0Fo9wbKLgw01ZY="/>
         <field:input field="apellidoMaterno" id="c_com_raze_admingol_domain_Jugador_apellidoMaterno" z="bia/duwTb6QIJ20k00YfE6GXgTA="/>
         <field:datetime dateTimePattern="${jugador_fechanacimiento_date_format}" field="fechaNacimiento" id="c_com_raze_admingol_domain_Jugador_fechaNacimiento" z="x3pjT+wst648vdA8t5tQIiJx3hM="/>
-        <field:textarea field="foto" id="c_com_raze_admingol_domain_Jugador_foto" z="7nyYxm38zCduWDsJJeQNl8YTZ4I="/>
+        <field:input field="foto" id="c_com_raze_admingol_domain_Jugador_foto" z="7nyYxm38zCduWDsJJeQNl8YTZ4I=" type="file"/>
+        <!-- <input type="file" name="foto" /> -->
         <field:input field="domicilio" id="c_com_raze_admingol_domain_Jugador_domicilio" z="ePiDmSM0VHdh4K7zE+HaD+gcqDw="/>
         <field:input field="telefono" id="c_com_raze_admingol_domain_Jugador_telefono" z="Le3wY1NP0YuNKKY345jYUgjYbKo="/>
         <field:input field="correoE" id="c_com_raze_admingol_domain_Jugador_correoE" z="q/Y+vl6Gwg3ftFYzcoKiL4QrB5g="/>
         <field:checkbox field="esDelegado" id="c_com_raze_admingol_domain_Jugador_esDelegado" z="/OmAqdR9woZbr6ZjJKLnSO1w3ss="/>
         <field:select field="posicion" id="c_com_raze_admingol_domain_Jugador_posicion" items="${posicions}" path="posicions" z="kdShelysGPM1ef8PgNG9DwF7kKc="/>
         <field:select field="status" id="c_com_raze_admingol_domain_Jugador_status" items="${statusequipojugadors}" path="statusequipojugadors" z="dlx4JJAhaYpXGwj8Oaanfe2HwMQ="/>
-        <field:checkbox field="activo" id="c_com_raze_admingol_domain_Jugador_activo" z="6Xxx4YXXyJmlYUeRQboxEznwgxY="/>
-        <field:select field="usuario" id="c_com_raze_admingol_domain_Jugador_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="eZ+tZvzjjh7Z8/Llg6YrC0T+a+M="/>
-        <field:datetime dateTimePattern="${jugador_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_Jugador_fechaCreacion" z="6RfrnI1H4ed8nf65S/Q1IarVFMs="/>
-        <field:datetime dateTimePattern="${jugador_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_Jugador_fechaModificacion" z="cmyRlk9a/u5bwK6WPvJi5D1u7XE="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_admingol_domain_Jugador" render="${not empty dependencies}" z="keNCey38CBWoUsw0385B8u85hrA="/>
 </div>

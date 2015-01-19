@@ -1,9 +1,7 @@
 package com.raze.admingol.service.domain;
 import com.raze.admingol.domain.ConfiguracionTorneo;
 import java.util.List;
-import org.springframework.roo.addon.layers.service.RooService;
 
-@RooService(domainTypes = { com.raze.admingol.domain.ConfiguracionTorneo.class })
 public interface ConfiguracionTorneoService {
 
 	public abstract long countAllConfiguracionTorneos();
