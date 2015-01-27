@@ -1,10 +1,14 @@
 package com.raze.admingol.controller;
-import com.raze.admingol.domain.Empresa;
-import com.raze.admingol.service.domain.EmpresaService;
+import java.io.ByteArrayInputStream;
+import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+
+import org.apache.commons.io.IOUtils;
 import org.joda.time.format.DateTimeFormat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.i18n.LocaleContextHolder;
@@ -24,6 +28,9 @@ import org.springframework.web.util.UriComponentsBuilder;
 import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
 
+import com.raze.admingol.domain.Empresa;
+import com.raze.admingol.service.domain.EmpresaService;
+
 @Controller
 @RequestMapping("/empresas")
 public class EmpresaController {
@@ -32,12 +39,14 @@ public class EmpresaController {
     EmpresaService empresaService;
 
 	@RequestMapping(method = RequestMethod.POST, produces = "text/html")
-    public String create(@Valid Empresa empresa, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
+    public String create(@Valid Empresa empresa, BindingResult bindingResult, 
+    		Model uiModel, HttpServletRequest httpServletRequest/*, @RequestParam("logo") MultipartFile logo*/) {
         if (bindingResult.hasErrors()) {
             populateEditForm(uiModel, empresa);
             return "empresas/create";
         }
         uiModel.asMap().clear();
+        //empresa.setLogo(logo.getBytes());
         empresaService.saveEmpresa(empresa);
         return "redirect:/empresas/" + encodeUrlPathSegment(empresa.getId().toString(), httpServletRequest);
     }
@@ -207,5 +216,24 @@ public class EmpresaController {
         } catch (Exception e) {
             return new ResponseEntity<String>("{\"ERROR\":"+e.getMessage()+"\"}", headers, HttpStatus.INTERNAL_SERVER_ERROR);
         }
+    }
+	
+	@RequestMapping(value = "/{id}/image", method = RequestMethod.GET)
+    public String showImage(@PathVariable("id") Long id, HttpServletResponse response, Model model) {
+		Empresa empresa = empresaService.findEmpresa(id);
+        if (empresa != null) {
+            byte[] image = empresa.getLogo();
+            if (image != null) {
+                try {
+                    response.setContentType("image/jpg");
+                    OutputStream out = response.getOutputStream();
+                    IOUtils.copy(new ByteArrayInputStream(image), out);
+                    out.flush();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return null;
     }
 }

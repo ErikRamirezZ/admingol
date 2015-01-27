@@ -14,11 +14,6 @@
         <field:input field="username" id="c_com_raze_admingol_domain_Usuario_username" required="true" z="l0ZBnUKpjiczUkke1W0LK3RboKI="/>
         <field:input field="password" id="c_com_raze_admingol_domain_Usuario_password" required="true" z="voclAeiEgvDkq0hDeGhm4uA/hlA="/>
         <field:select field="rol" id="c_com_raze_admingol_domain_Usuario_rol" itemValue="id" items="${rols}" multiple="true" path="/rols" required="true" z="FkooH2vJHzmzRJ+ROCeLxsTtYp0="/>
-        <field:input field="numeroIntentos" id="c_com_raze_admingol_domain_Usuario_numeroIntentos" z="A40I1OkweKuyFm6OlWgle51ueYs="/>
-        <field:checkbox field="activo" id="c_com_raze_admingol_domain_Usuario_activo" z="LxzgWgI9Rq+n6YAKosAhEn5Hfpk="/>
-        <field:select field="usuario" id="c_com_raze_admingol_domain_Usuario_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="2rcPCX40rgPY2yiYy1Zh0t32ugw="/>
-        <field:datetime dateTimePattern="${usuario_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_Usuario_fechaCreacion" z="Wvz6YprZ6AuaRpsucSOsJYXWsLI="/>
-        <field:datetime dateTimePattern="${usuario_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_Usuario_fechaModificacion" z="gnamKe+v8KcLs9K+wyZ4RJcPI48="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_admingol_domain_Usuario" render="${not empty dependencies}" z="62n1wiujWh47HYbUwFZ1e89WbqU="/>
 </div>

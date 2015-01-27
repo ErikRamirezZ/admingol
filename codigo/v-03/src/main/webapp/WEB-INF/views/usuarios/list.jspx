@@ -8,8 +8,6 @@
             <table:column id="c_com_raze_admingol_domain_Usuario_nombre" property="nombre" z="mQ2Y6Mo1l1iSN46GDp+NJDIjT5I="/>
             <table:column id="c_com_raze_admingol_domain_Usuario_apellidoPaterno" property="apellidoPaterno" z="eu6KinFkqSrrHFebCu26cqypWPk="/>
             <table:column id="c_com_raze_admingol_domain_Usuario_apellidoMaterno" property="apellidoMaterno" z="fNYz58oiyL6wDX+dYzdJqorItto="/>
-            <table:column date="true" dateTimePattern="${usuario_fechanacimiento_date_format}" id="c_com_raze_admingol_domain_Usuario_fechaNacimiento" property="fechaNacimiento" z="EcrAN/K6QNwSDEDM7J/n4ny/J+0="/>
-            <table:column id="c_com_raze_admingol_domain_Usuario_domicilio" property="domicilio" z="V/mIgrhnBsU7fi6OwbR2g4J9QCU="/>
         </table:table>
     </page:list>
 </div>

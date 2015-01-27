@@ -10,8 +10,5 @@
         <field:display date="true" dateTimePattern="${torneo_fechafin_date_format}" field="fechaFin" id="s_com_raze_admingol_domain_Torneo_fechaFin" object="${torneo}" z="4Wt71ATowzbEuIBkZ1oUyliYNMo="/>
         <field:display field="equipo" id="s_com_raze_admingol_domain_Torneo_equipo" object="${torneo}" z="kKFt3wj0M+VRAgcSqk8t/wqREqs="/>
         <field:display field="activo" id="s_com_raze_admingol_domain_Torneo_activo" object="${torneo}" z="p9Rv7mWVUHsnvQ5VXxx38IaY7IY="/>
-        <field:display field="usuario" id="s_com_raze_admingol_domain_Torneo_usuario" object="${torneo}" z="kNc0XruPMiSucN2M/+zrWtAii7g="/>
-        <field:display date="true" dateTimePattern="${torneo_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_domain_Torneo_fechaCreacion" object="${torneo}" z="f2YHHKxRsi79y1kwI0hz5/LubpI="/>
-        <field:display date="true" dateTimePattern="${torneo_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_domain_Torneo_fechaModificacion" object="${torneo}" z="+aBYZwhiDbyRVzyQXziJi3/BlXI="/>
     </page:show>
 </div>

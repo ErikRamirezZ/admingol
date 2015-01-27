@@ -10,7 +10,6 @@
         <field:display field="correoE" id="s_com_raze_admingol_domain_Empresa_correoE" object="${empresa}" z="YSSQSShFKXtOQR6IzXgD9OAGJGI="/>
         <field:display field="logo" id="s_com_raze_admingol_domain_Empresa_logo" object="${empresa}" z="EHVPNGNl3hxTKzD88/SrEYvLbeM="/>
         <field:display field="activo" id="s_com_raze_admingol_domain_Empresa_activo" object="${empresa}" z="Rv/ATQClwdbWNPC5lBJvYQc7KdA="/>
-        <field:display date="true" dateTimePattern="${empresa_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_domain_Empresa_fechaCreacion" object="${empresa}" z="6DQtScrkOExsHlENTm23vpOU0s0="/>
-        <field:display date="true" dateTimePattern="${empresa_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_domain_Empresa_fechaModificacion" object="${empresa}" z="X8w1EMbyzDfEImQtkODh12MBnCw="/>
+        <img src="${empresa.id}/image" height="250px" alt="x" width="300px"/>
     </page:show>
 </div>

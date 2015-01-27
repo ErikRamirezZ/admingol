@@ -12,12 +12,9 @@
         <field:display field="telefono" id="s_com_raze_admingol_domain_Usuario_telefono" object="${usuario}" z="Pzf5x9l0+8g3MjSCy9STuFjBtWA="/>
         <field:display field="celular" id="s_com_raze_admingol_domain_Usuario_celular" object="${usuario}" z="Hv9+JmDIRTPKEq2tHt80Ss9FVpo="/>
         <field:display field="username" id="s_com_raze_admingol_domain_Usuario_username" object="${usuario}" z="2UVcyrdtWuPWcL0BoWJRqmwTZJw="/>
-        <field:display field="password" id="s_com_raze_admingol_domain_Usuario_password" object="${usuario}" z="sP4mo+9sSG0dHpRnAJSeJa3PNpM="/>
+        <field:display field="password" id="s_com_raze_admingol_domain_Usuario_password" object="${usuario}" z="sP4mo+9sSG0dHpRnAJSeJa3PNpM=" />
         <field:display field="rol" id="s_com_raze_admingol_domain_Usuario_rol" object="${usuario}" z="WujWrlnqqj/kead0uJisQXjVkZQ="/>
         <field:display field="numeroIntentos" id="s_com_raze_admingol_domain_Usuario_numeroIntentos" object="${usuario}" z="A5OL1AednfGS1P3iNWzkux+b6VA="/>
         <field:display field="activo" id="s_com_raze_admingol_domain_Usuario_activo" object="${usuario}" z="DWNbev5sGDkrSh10yL2Y0+nSsaw="/>
-        <field:display field="usuario" id="s_com_raze_admingol_domain_Usuario_usuario" object="${usuario}" z="cXYJvSu6yTRu5TO1bBZWGOmLrWU="/>
-        <field:display date="true" dateTimePattern="${usuario_fechacreacion_date_format}" field="fechaCreacion" id="s_com_raze_admingol_domain_Usuario_fechaCreacion" object="${usuario}" z="aQVG5pXWdJBbryFeWHHWscjNLOg="/>
-        <field:display date="true" dateTimePattern="${usuario_fechamodificacion_date_format}" field="fechaModificacion" id="s_com_raze_admingol_domain_Usuario_fechaModificacion" object="${usuario}" z="mr18xzAbFiiyDLCa3Mo0BGxIXDw="/>
     </page:show>
 </div>

@@ -10,9 +10,6 @@
         <field:datetime dateTimePattern="${torneo_fechafin_date_format}" field="fechaFin" id="c_com_raze_admingol_domain_Torneo_fechaFin" z="1M/f+oIMcOeefv+VmMUQe8RUvq4="/>
         <field:select field="equipo" id="c_com_raze_admingol_domain_Torneo_equipo" itemValue="id" items="${equipoes}" multiple="true" path="/equipoes" z="dIpgpq6zPyytMyCTL9yWWpMdhnI="/>
         <field:checkbox field="activo" id="c_com_raze_admingol_domain_Torneo_activo" z="kvof1TV3dvLVGxEgp6i5tSoG8gU="/>
-        <field:select field="usuario" id="c_com_raze_admingol_domain_Torneo_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="oBszHvWhfFBj3h1WrBcuIoBl5MQ="/>
-        <field:datetime dateTimePattern="${torneo_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_Torneo_fechaCreacion" z="rNQcdCYh0k+g8UTAJNWexuOiFLs="/>
-        <field:datetime dateTimePattern="${torneo_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_Torneo_fechaModificacion" z="xtaepqjZFwxjk9tJQt4PbzhgYVE="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_admingol_domain_Torneo" render="${not empty dependencies}" z="jBzcbm+k7Hgyt0pDD8igdDY61YQ="/>
 </div>

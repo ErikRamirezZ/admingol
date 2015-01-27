@@ -9,9 +9,7 @@
         <field:input field="telefono" id="c_com_raze_admingol_domain_Sucursal_telefono" z="em04nypqpkwW5WpnOT0jX9RzISI="/>
         <field:input field="correoE" id="c_com_raze_admingol_domain_Sucursal_correoE" z="oVBshOnXcYSOYg1vjNKs408n1eQ="/>
         <field:checkbox field="activo" id="c_com_raze_admingol_domain_Sucursal_activo" z="6EC28QPGv4N5yhEC4q/0Xd/eGtk="/>
-        <field:select field="usuario" id="c_com_raze_admingol_domain_Sucursal_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="clqXKzApekGrNl3z3xirL1bf7Jk="/>
-        <field:datetime dateTimePattern="${sucursal_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_Sucursal_fechaCreacion" z="0EP/197DY4QV+wNoBsbiBLKNfhk="/>
-        <field:datetime dateTimePattern="${sucursal_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_Sucursal_fechaModificacion" z="VEVm+zOxGBtpV3KFJkpU3AAkG48="/>
+        ${sucursal_fechaCreacion = new Date()}
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_admingol_domain_Sucursal" render="${not empty dependencies}" z="/7RuSQsHQeWtmCHpiRwQDpH0RYg="/>
 </div>
