@@ -9,7 +9,6 @@
         <field:input field="telefono" id="c_com_raze_admingol_domain_Sucursal_telefono" z="em04nypqpkwW5WpnOT0jX9RzISI="/>
         <field:input field="correoE" id="c_com_raze_admingol_domain_Sucursal_correoE" z="oVBshOnXcYSOYg1vjNKs408n1eQ="/>
         <field:checkbox field="activo" id="c_com_raze_admingol_domain_Sucursal_activo" z="6EC28QPGv4N5yhEC4q/0Xd/eGtk="/>
-        ${sucursal_fechaCreacion = new Date()}
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_admingol_domain_Sucursal" render="${not empty dependencies}" z="/7RuSQsHQeWtmCHpiRwQDpH0RYg="/>
 </div>

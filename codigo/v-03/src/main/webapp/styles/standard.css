@@ -26,6 +26,7 @@ body {
 	max-width: 1024px;
 	margin-right: auto;
 	margin-left: auto;
+	min-height:1000px;
 
 	/* fix max-width incompatibility in IE6 */
 	width:expression(document.body.clientWidth > 1024? "1024px": "auto" );

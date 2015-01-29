@@ -23,7 +23,7 @@ import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
 
 @Controller
-@RequestMapping("/roles")
+@RequestMapping("/rols")
 public class RolController {
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET, headers = "Accept=application/json")
@@ -123,24 +123,24 @@ public class RolController {
     public String create(@Valid Rol rol, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             populateEditForm(uiModel, rol);
-            return "roles/create";
+            return "rols/create";
         }
         uiModel.asMap().clear();
         rolService.saveRol(rol);
-        return "redirect:/roles/" + encodeUrlPathSegment(rol.getId().toString(), httpServletRequest);
+        return "redirect:/rols/" + encodeUrlPathSegment(rol.getId().toString(), httpServletRequest);
     }
 
 	@RequestMapping(params = "form", produces = "text/html")
     public String createForm(Model uiModel) {
         populateEditForm(uiModel, new Rol());
-        return "roles/create";
+        return "rols/create";
     }
 
 	@RequestMapping(value = "/{id}", produces = "text/html")
     public String show(@PathVariable("id") Long id, Model uiModel) {
         uiModel.addAttribute("rol", rolService.findRol(id));
         uiModel.addAttribute("itemId", id);
-        return "roles/show";
+        return "rols/show";
     }
 
 	@RequestMapping(produces = "text/html")
@@ -154,7 +154,7 @@ public class RolController {
         } else {
             uiModel.addAttribute("roles", rolService.findAllRols());
         }
-        return "roles/list";
+        return "rols/list";
     }
 
 	@RequestMapping(method = RequestMethod.PUT, produces = "text/html")
@@ -165,13 +165,13 @@ public class RolController {
         }
         uiModel.asMap().clear();
         rolService.updateRol(rol);
-        return "redirect:/roles/" + encodeUrlPathSegment(rol.getId().toString(), httpServletRequest);
+        return "redirect:/rols/" + encodeUrlPathSegment(rol.getId().toString(), httpServletRequest);
     }
 
 	@RequestMapping(value = "/{id}", params = "form", produces = "text/html")
     public String updateForm(@PathVariable("id") Long id, Model uiModel) {
         populateEditForm(uiModel, rolService.findRol(id));
-        return "roles/update";
+        return "rols/update";
     }
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = "text/html")
@@ -181,7 +181,7 @@ public class RolController {
         uiModel.asMap().clear();
         uiModel.addAttribute("page", (page == null) ? "1" : page.toString());
         uiModel.addAttribute("size", (size == null) ? "10" : size.toString());
-        return "redirect:/roles";
+        return "redirect:/rols";
     }
 
 	void populateEditForm(Model uiModel, Rol rol) {

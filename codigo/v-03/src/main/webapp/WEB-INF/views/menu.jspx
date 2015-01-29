@@ -78,10 +78,14 @@
 	            <menu:item id="i_configuraciontorneo_new" messageCode="global_menu_new" url="/configuraciontorneos?form" z="NldFBip+P+4eVeMA6M64RxXgV0k="/>
 	            <menu:item id="i_configuraciontorneo_list" messageCode="global_menu_list" url="/configuraciontorneos?page=1&amp;size=${empty param.size ? 10 : param.size}" z="glIQ9WZ9z2gAH4eTdBtGTZO+8BU="/>
 	        </menu:category>
-	        <menu:category id="c_pagohechoservicio" z="OZK7eVcilWOU1WNLAO7H+dQjmsE=">
-	            <menu:item id="i_pagohechoservicio_new" messageCode="global_menu_new" url="/pagohechoservicios?form" z="zBdqdGSEJC+FUf7vkKb3chCSpFI="/>
-	            <menu:item id="i_pagohechoservicio_list" messageCode="global_menu_list" url="/pagohechoservicios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7TuVnYiSlT0n3WwIGigvj/6eO/I="/>
-	        </menu:category>
+          <menu:category id="c_pagohechoservicio" z="OZK7eVcilWOU1WNLAO7H+dQjmsE=">
+              <menu:item id="i_pagohechoservicio_new" messageCode="global_menu_new" url="/pagohechoservicios?form" z="zBdqdGSEJC+FUf7vkKb3chCSpFI="/>
+              <menu:item id="i_pagohechoservicio_list" messageCode="global_menu_list" url="/pagohechoservicios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7TuVnYiSlT0n3WwIGigvj/6eO/I="/>
+          </menu:category>
+          <menu:category id="c_rol" z="OZK7eVcilWOU1WNLAO7H+dQjmsE=">
+              <menu:item id="i_rol_new" messageCode="global_menu_new" url="/rols?form" z="zBdqdGSEJC+FUf7vkKb3chCSpFE="/>
+              <menu:item id="i_rol_list" messageCode="global_menu_list" url="/rols?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7TuVnYiSlT0n3WwIGigvj/6eO/e="/>
+          </menu:category>
 	        <menu:category id="c_view" z="HjmI4Chx/kBYfS/6HjBLbCA+XpU=">
 	            <menu:item id="i_view___reportsreportes_id" messageCode="global_generic" url="//reports/reportes" z="H+Mwbc0b5PxhWFFaRMZnNUU55v8="/>
 	        </menu:category>
