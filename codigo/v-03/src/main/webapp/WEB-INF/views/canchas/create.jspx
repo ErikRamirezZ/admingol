@@ -6,10 +6,10 @@
         <field:select field="sucursal" id="c_com_raze_admingol_domain_Cancha_sucursal" itemValue="id" items="${sucursals}" path="/sucursals" required="true" z="qr9EPQcNW6Qizsb2Px3ShByjYbg="/>
         <field:input field="nombre" id="c_com_raze_admingol_domain_Cancha_nombre" required="true" z="EqkZS9yiZenogYkcwEvmsAmh50A="/>
         <field:input field="descripcion" id="c_com_raze_admingol_domain_Cancha_descripcion" z="LtNcITJqx8bb2fh1PTdfYbYmAvI="/>
-        <field:checkbox field="activo" id="c_com_raze_admingol_domain_Cancha_activo" z="IPsddiluhkooBcBOomx/Y/OhJX8="/>
-        <field:select field="usuario" id="c_com_raze_admingol_domain_Cancha_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="l2k/6wp/1KSMjN4+TL6UEpeuGvs="/>
-        <field:datetime dateTimePattern="${cancha_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_Cancha_fechaCreacion" z="Eg44TvmLKIIXkBwIdEG7Qg7h1HE="/>
-        <field:datetime dateTimePattern="${cancha_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_Cancha_fechaModificacion" z="WNZRUzMw5EVXG2ZYCzVkr3AIIJs="/>
+        <field:checkbox field="activo" id="c_com_raze_admingol_domain_Cancha_activo" z="IPsddiluhkooBcBOomx/Y/OhJX8=" render="false"/>
+        <field:select field="usuario" id="c_com_raze_admingol_domain_Cancha_usuario" itemValue="id" items="${usuarios}" path="/usuarios" z="l2k/6wp/1KSMjN4+TL6UEpeuGvs=" render="false"/>
+        <field:datetime dateTimePattern="${cancha_fechacreacion_date_format}" field="fechaCreacion" id="c_com_raze_admingol_domain_Cancha_fechaCreacion" z="Eg44TvmLKIIXkBwIdEG7Qg7h1HE=" render="false"/>
+        <field:datetime dateTimePattern="${cancha_fechamodificacion_date_format}" field="fechaModificacion" id="c_com_raze_admingol_domain_Cancha_fechaModificacion" z="WNZRUzMw5EVXG2ZYCzVkr3AIIJs=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_admingol_domain_Cancha" render="${not empty dependencies}" z="WMOlRC/k0AJ12E0gAS8dWI8jLbU="/>
 </div>

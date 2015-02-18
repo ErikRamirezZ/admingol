@@ -4,10 +4,11 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_com_raze_admingol_domain_Usuario" items="${usuarios}" z="qAonkfj7LlXA9lkA1wr1ZTyt3bc=">
         <table:table data="${usuarios}" id="l_com_raze_admingol_domain_Usuario" path="/usuarios" z="o9YHyjcaVZkW/4LS1q+5VTrxD3Y=">
-            <table:column id="c_com_raze_admingol_domain_Usuario_empresa" property="empresa" z="1xbbs5GotRFeI3Zn+pJ3LDIix5E="/>
             <table:column id="c_com_raze_admingol_domain_Usuario_nombre" property="nombre" z="mQ2Y6Mo1l1iSN46GDp+NJDIjT5I="/>
             <table:column id="c_com_raze_admingol_domain_Usuario_apellidoPaterno" property="apellidoPaterno" z="eu6KinFkqSrrHFebCu26cqypWPk="/>
             <table:column id="c_com_raze_admingol_domain_Usuario_apellidoMaterno" property="apellidoMaterno" z="fNYz58oiyL6wDX+dYzdJqorItto="/>
+            <table:column id="c_com_raze_admingol_domain_Usuario_rol" property="rol" z="fNYz58oiyL6wDX+dYzdJqorIppo="/>
+            <table:column id="c_com_raze_admingol_domain_Usuario_empresa" property="empresa" z="1xbbs5GotRFeI3Zn+pJ3LDIix5E="/>
         </table:table>
     </page:list>
 </div>

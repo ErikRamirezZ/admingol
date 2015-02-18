@@ -38,6 +38,7 @@ public class EquipoController {
         HttpHeaders headers = new HttpHeaders();
         headers.add("Content-Type", "application/json; charset=utf-8");
         try {
+        	
             Equipo equipo = equipoService.findEquipo(id);
             if (equipo == null) {
                 return new ResponseEntity<String>(headers, HttpStatus.NOT_FOUND);

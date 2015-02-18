@@ -17,8 +17,6 @@ import javax.persistence.TemporalType;
 import javax.persistence.Version;
 import javax.validation.constraints.NotNull;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -28,7 +26,7 @@ import flexjson.JSONSerializer;
 
 @Entity(name = "usuario")
 public class Usuario implements UserDetails {
-
+	
     /**
 	 * 
 	 */
@@ -114,7 +112,8 @@ public class Usuario implements UserDetails {
     private Date fechaModificacion;
 
 	public String toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+//        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+		return nombre + " " + apellidoPaterno + " " + apellidoMaterno;
     }
 
 	public Empresa getEmpresa() {

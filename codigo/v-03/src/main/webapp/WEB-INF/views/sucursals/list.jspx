@@ -4,8 +4,8 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_com_raze_admingol_domain_Sucursal" items="${sucursals}" z="NrSzIslaA/AufcSToZ0knSZ9Dm4=">
         <table:table data="${sucursals}" id="l_com_raze_admingol_domain_Sucursal" path="/sucursals" z="sxBySXbFErWqfUKxMZ3AJ5fVXRw=">
-            <table:column id="c_com_raze_admingol_domain_Sucursal_empresa" property="empresa" z="SYNWlCtik9VM71cIhKDWsPO1fMI="/>
             <table:column id="c_com_raze_admingol_domain_Sucursal_nombre" property="nombre" z="oHAjL4Fn1yvMrHA4+zB46GCA5lo="/>
+            <table:column id="c_com_raze_admingol_domain_Sucursal_empresa" property="empresa" z="SYNWlCtik9VM71cIhKDWsPO1fMI="/>
             <table:column id="c_com_raze_admingol_domain_Sucursal_domicilio" property="domicilio" z="uBRW0uFbw8t2nI1ZB4AqXhA4K8g="/>
             <table:column id="c_com_raze_admingol_domain_Sucursal_telefono" property="telefono" z="2+M4onLSuSqWK4a9nVpIWnT+mQg="/>
             <table:column id="c_com_raze_admingol_domain_Sucursal_correoE" property="correoE" z="flaOxB93Oc4sCn9bhDSOxGWlyQw="/>

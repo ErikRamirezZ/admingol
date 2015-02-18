@@ -10,8 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Version;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.security.core.GrantedAuthority;
 
 import flexjson.JSONDeserializer;
@@ -20,6 +18,8 @@ import flexjson.JSONSerializer;
 @Entity
 public class Rol implements GrantedAuthority {
 
+	private static String PREFIX = "ROLE_";
+			
 	/**
 	 * 
 	 */
@@ -82,7 +82,7 @@ public class Rol implements GrantedAuthority {
 	}
 
 	public String getNombre() {
-		return nombre;
+		return PREFIX + nombre;
 	}
 
 	public void setNombre(String nombre) {
@@ -90,12 +90,13 @@ public class Rol implements GrantedAuthority {
 	}
 
 	public String toString() {
-		return ReflectionToStringBuilder.toString(this,
-				ToStringStyle.SHORT_PREFIX_STYLE);
+//		return ReflectionToStringBuilder.toString(this,
+//				ToStringStyle.SHORT_PREFIX_STYLE);
+		return getAuthority();
 	}
 
 	@Override
 	public String getAuthority() {
-		return nombre;
+		return PREFIX + nombre;
 	}
 }

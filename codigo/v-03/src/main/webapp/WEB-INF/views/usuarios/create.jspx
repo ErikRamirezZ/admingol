@@ -16,4 +16,8 @@
         <field:select field="rol" id="c_com_raze_admingol_domain_Usuario_rol" itemValue="id" items="${rols}" multiple="true" path="/rols" required="true" z="FkooH2vJHzmzRJ+ROCeLxsTtYp0="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_admingol_domain_Usuario" render="${not empty dependencies}" z="62n1wiujWh47HYbUwFZ1e89WbqU="/>
+    <h1>${rols}</h1>
+    <h1>${rols[1]}</h1>
+    <h1>${rols[1].id}</h1>
 </div>
+

@@ -1,22 +1,23 @@
 package com.raze.admingol.domain;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-import flexjson.JSONDeserializer;
-import flexjson.JSONSerializer;
-import javax.persistence.ManyToOne;
-import javax.validation.constraints.NotNull;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Version;
+import javax.validation.constraints.NotNull;
+
 import org.springframework.format.annotation.DateTimeFormat;
+
+import flexjson.JSONDeserializer;
+import flexjson.JSONSerializer;
 
 @Entity
 public class Sucursal {
@@ -121,7 +122,8 @@ public class Sucursal {
     }
 
 	public String toString() {
-        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
+//        return ReflectionToStringBuilder.toString(this, ToStringStyle.SIMPLE_STYLE);
+		return nombre + " - " + empresa;
     }
 
 	public Empresa getEmpresa() {

@@ -29,6 +29,7 @@ import org.springframework.web.util.UriUtils;
 import org.springframework.web.util.WebUtils;
 
 import com.raze.admingol.domain.Empresa;
+import com.raze.admingol.email.NotificationServiceImpl;
 import com.raze.admingol.service.domain.EmpresaService;
 
 @Controller
@@ -37,7 +38,7 @@ public class EmpresaController {
 
 	@Autowired
     EmpresaService empresaService;
-
+	
 	@RequestMapping(method = RequestMethod.POST, produces = "text/html")
     public String create(@Valid Empresa empresa, BindingResult bindingResult, 
     		Model uiModel, HttpServletRequest httpServletRequest/*, @RequestParam("logo") MultipartFile logo*/) {
@@ -62,6 +63,9 @@ public class EmpresaController {
         addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("empresa", empresaService.findEmpresa(id));
         uiModel.addAttribute("itemId", id);
+        NotificationServiceImpl notificationService = new NotificationServiceImpl();
+//        SimpleMailMessage sm = new SimpleMailMessage();
+        notificationService.sendMessage("eramirezz0201@gmail.com", "Prueba de correo con algunos elemento s HTML <br/> <h3>Preba de correo</h3> <br/> aqui voy a insertar una imagen de admingol <br/><img src='http://raazee.whelastic.net/admingol/resources/images/carousel-01.jpg'/> <br/> tambien meto una tablas <br/><table><tr><th>TH1</th><th>TH2</th></tr><tr><td>1,1</td><td>1,2</td></tr><tr><td>2,1</td><td>2,2</td></tr></table>" );
         return "empresas/show";
     }
 

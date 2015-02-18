@@ -8,7 +8,7 @@
         <field:input field="domicilio" id="c_com_raze_admingol_domain_Sucursal_domicilio" z="jrVimJ2smnUM9pYdowvP+6RF61g="/>
         <field:input field="telefono" id="c_com_raze_admingol_domain_Sucursal_telefono" z="em04nypqpkwW5WpnOT0jX9RzISI="/>
         <field:input field="correoE" id="c_com_raze_admingol_domain_Sucursal_correoE" z="oVBshOnXcYSOYg1vjNKs408n1eQ="/>
-        <field:checkbox field="activo" id="c_com_raze_admingol_domain_Sucursal_activo" z="6EC28QPGv4N5yhEC4q/0Xd/eGtk="/>
+        <field:checkbox field="activo" id="c_com_raze_admingol_domain_Sucursal_activo" z="6EC28QPGv4N5yhEC4q/0Xd/eGtk=" render="false"/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_raze_admingol_domain_Sucursal" render="${not empty dependencies}" z="/7RuSQsHQeWtmCHpiRwQDpH0RYg="/>
 </div>
