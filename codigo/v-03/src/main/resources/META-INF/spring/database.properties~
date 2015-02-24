@@ -1,0 +1,13 @@
+#Updated at Thu Dec 18 23:14:31 CST 2014
+#Thu Dec 18 23:14:31 CST 2014
+database.driverClassName=com.mysql.jdbc.Driver
+
+#DESARROLLO
+database.url=jdbc\:mysql\://localhost\:3306/admingol
+database.username=root
+database.password=
+
+#PRODUCCION
+#database.url=jdbc:mysql://mysql25185-raazee.whelastic.net/admingol
+#database.username=admingol
+#database.password=C0ntr44dm1ng0lDB
