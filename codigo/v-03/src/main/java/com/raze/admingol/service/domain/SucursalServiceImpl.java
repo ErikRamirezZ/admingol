@@ -3,19 +3,22 @@ package com.raze.admingol.service.domain;
 import java.util.Date;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.raze.admingol.domain.Sucursal;
-import com.raze.admingol.domain.Usuario;
+import com.raze.admingol.environment.Util;
 import com.raze.admingol.repository.domain.SucursalRepository;
 
 @Service
 @Transactional
 public class SucursalServiceImpl implements SucursalService {
 
+	static Logger log = LoggerFactory.getLogger(SucursalServiceImpl.class);
+	
 	@Autowired
 	SucursalRepository sucursalRepository;
 
@@ -32,7 +35,11 @@ public class SucursalServiceImpl implements SucursalService {
 	}
 
 	public List<Sucursal> findAllSucursals() {
-		return sucursalRepository.findAll();
+		if(Util.userHasROLE_SUPER()) {
+			return sucursalRepository.findAll();
+		} else {
+			return sucursalRepository.findByEmpresa(Util.getUsuarioAuthenticated().getEmpresa());
+		}
 	}
 
 	public List<Sucursal> findSucursalEntries(int firstResult, int maxResults) {
@@ -40,9 +47,10 @@ public class SucursalServiceImpl implements SucursalService {
 				new org.springframework.data.domain.PageRequest(firstResult
 						/ maxResults, maxResults)).getContent();
 	}
+	
 
 	public void saveSucursal(Sucursal sucursal) {
-		datosDefault(sucursal);
+		sucursal = datosDefault(sucursal);
 		sucursal.setActivo(true);
 		sucursalRepository.save(sucursal);
 	}
@@ -52,11 +60,10 @@ public class SucursalServiceImpl implements SucursalService {
 		return sucursalRepository.save(sucursal);
 	}
 
-	private void datosDefault(Sucursal sucursal) {
-		Usuario principal = (Usuario) SecurityContextHolder.getContext()
-				.getAuthentication().getPrincipal();
-		sucursal.setUsuario(principal);
+	private Sucursal datosDefault(Sucursal sucursal) {
+//		sucursal.setUsuario(Util.getUsuarioAuthenticated());
 		sucursal.setFechaCreacion(new Date());
+		return sucursal;
 	}
 
 }

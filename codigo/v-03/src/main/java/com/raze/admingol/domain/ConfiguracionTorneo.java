@@ -1,30 +1,33 @@
 package com.raze.admingol.domain;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-import javax.persistence.ManyToOne;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.DecimalMax;
-import com.raze.admingol.catalog.TipoCobroTorneo;
-import javax.persistence.Enumerated;
-import com.raze.admingol.catalog.DiasJuego;
-import flexjson.JSONDeserializer;
-import flexjson.JSONSerializer;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-import javax.persistence.Version;
-import java.util.Date;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Version;
+import javax.validation.constraints.DecimalMax;
+import javax.validation.constraints.NotNull;
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.format.annotation.DateTimeFormat;
+
+import com.raze.admingol.catalog.DiasJuego;
+import com.raze.admingol.catalog.TipoCobroTorneo;
+
+import flexjson.JSONDeserializer;
+import flexjson.JSONSerializer;
 
 @Entity
 public class ConfiguracionTorneo {
@@ -73,7 +76,7 @@ public class ConfiguracionTorneo {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     private List<Cancha> canchasJuego = new ArrayList<Cancha>();
 
     /**

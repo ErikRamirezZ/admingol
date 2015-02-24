@@ -1,26 +1,29 @@
 package com.raze.admingol.domain;
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
-import javax.persistence.ManyToOne;
-import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
-import javax.persistence.CascadeType;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-import javax.persistence.Version;
-import java.util.Date;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Version;
+import javax.validation.constraints.NotNull;
+
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.springframework.format.annotation.DateTimeFormat;
-import com.raze.admingol.catalog.TipoPartido;
-import javax.persistence.Enumerated;
+
 import com.raze.admingol.catalog.StatusPartido;
+import com.raze.admingol.catalog.TipoPartido;
+
 import flexjson.JSONDeserializer;
 import flexjson.JSONSerializer;
 
@@ -35,7 +38,7 @@ public class Partido {
 
     /**
      */
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany
     private List<Usuario> arbitros = new ArrayList<Usuario>();
 
     /**

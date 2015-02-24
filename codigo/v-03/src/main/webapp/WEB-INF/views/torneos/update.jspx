@@ -8,7 +8,6 @@
         <field:input field="descripcion" id="c_com_raze_admingol_domain_Torneo_descripcion" z="Sb3cZ9EeQIZJ66mD/oDxEVLkkLQ="/>
         <field:datetime dateTimePattern="${torneo_fechainicio_date_format}" field="fechaInicio" id="c_com_raze_admingol_domain_Torneo_fechaInicio" z="WUynCyscIfVykDZfXyy/jre2Sl0="/>
         <field:datetime dateTimePattern="${torneo_fechafin_date_format}" field="fechaFin" id="c_com_raze_admingol_domain_Torneo_fechaFin" z="1M/f+oIMcOeefv+VmMUQe8RUvq4="/>
-        <field:select field="equipo" id="c_com_raze_admingol_domain_Torneo_equipo" itemValue="id" items="${equipoes}" multiple="true" path="/equipoes" z="dIpgpq6zPyytMyCTL9yWWpMdhnI="/>
         <field:checkbox field="activo" id="c_com_raze_admingol_domain_Torneo_activo" z="kvof1TV3dvLVGxEgp6i5tSoG8gU="/>
     </form:update>
 </div>

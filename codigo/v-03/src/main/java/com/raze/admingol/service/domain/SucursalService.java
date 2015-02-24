@@ -1,6 +1,7 @@
 package com.raze.admingol.service.domain;
-import com.raze.admingol.domain.Sucursal;
 import java.util.List;
+
+import com.raze.admingol.domain.Sucursal;
 
 public interface SucursalService {
 
@@ -24,4 +25,5 @@ public interface SucursalService {
 
 	public abstract Sucursal updateSucursal(Sucursal sucursal);
 
+//	public abstract List<Sucursal> findBy
 }

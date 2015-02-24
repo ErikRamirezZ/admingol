@@ -8,7 +8,6 @@
         <field:display field="descripcion" id="s_com_raze_admingol_domain_Torneo_descripcion" object="${torneo}" z="71lKbijbapWGqGSySV16h6E6760="/>
         <field:display date="true" dateTimePattern="${torneo_fechainicio_date_format}" field="fechaInicio" id="s_com_raze_admingol_domain_Torneo_fechaInicio" object="${torneo}" z="yuH2zx+LyMEYFcb31L0pHhiDNtU="/>
         <field:display date="true" dateTimePattern="${torneo_fechafin_date_format}" field="fechaFin" id="s_com_raze_admingol_domain_Torneo_fechaFin" object="${torneo}" z="4Wt71ATowzbEuIBkZ1oUyliYNMo="/>
-        <field:display field="equipo" id="s_com_raze_admingol_domain_Torneo_equipo" object="${torneo}" z="kKFt3wj0M+VRAgcSqk8t/wqREqs="/>
         <field:display field="activo" id="s_com_raze_admingol_domain_Torneo_activo" object="${torneo}" z="p9Rv7mWVUHsnvQ5VXxx38IaY7IY="/>
     </page:show>
 </div>

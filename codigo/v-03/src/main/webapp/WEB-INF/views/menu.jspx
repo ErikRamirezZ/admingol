@@ -9,7 +9,7 @@
     <spring:message code="button_home" var="button_home" htmlEscape="false" />
     <spring:message code="global_menu_admon" var="global_menu_admon" htmlEscape="false" />
     <spring:message code="global_menu_config" var="global_menu_config" htmlEscape="false" />
-    <spring:message code="global_menu_master" var="global_menu_master" htmlEscape="false" />
+    <spring:message code="global_menu_super" var="global_menu_super" htmlEscape="false" />
     
     <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=" >
 			<li class='active'><a href='index'>${button_home}</a></li>
@@ -89,7 +89,7 @@
       </security:authorize>
 
       <security:authorize access="hasRole('ROLE_SUPER')">
-      <li class='has-sub '><a href='#'>${global_menu_master}</a>
+      <li class='has-sub '><a href='#'>${global_menu_super}</a>
         <ul>    
            <menu:category id="c_empresa" z="Xy2UIEQBwGL74OghlgyDNqDXG44=">
                <menu:item id="i_empresa_new" messageCode="global_menu_new" url="/empresas?form" z="TBXez8QM+aB2tzcjHN1lQJYrewc="/>
