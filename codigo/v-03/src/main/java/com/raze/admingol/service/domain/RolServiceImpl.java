@@ -1,11 +1,13 @@
 package com.raze.admingol.service.domain;
 
-import com.raze.admingol.domain.Rol;
-import com.raze.admingol.repository.domain.RolRepository;
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.raze.admingol.domain.Rol;
+import com.raze.admingol.repository.domain.RolRepository;
 
 @Service
 @Transactional

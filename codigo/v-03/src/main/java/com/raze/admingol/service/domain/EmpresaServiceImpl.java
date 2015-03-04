@@ -1,14 +1,14 @@
 package com.raze.admingol.service.domain;
 
-import com.raze.admingol.domain.Empresa;
-import com.raze.admingol.repository.domain.EmpresaRepository;
-
 import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.raze.admingol.domain.Empresa;
+import com.raze.admingol.repository.domain.EmpresaRepository;
 
 @Service
 @Transactional
@@ -38,17 +38,14 @@ public class EmpresaServiceImpl implements EmpresaService {
     }
 
 	public void saveEmpresa(Empresa empresa) {
-		datosDefault(empresa);
+		empresa.setFechaCreacion(new Date());
+		empresa.setActivo(true);
         empresaRepository.save(empresa);
     }
 
 	public Empresa updateEmpresa(Empresa empresa) {
-		datosDefault(empresa);
+		empresa.setFechaModificacion(new Date());
         return empresaRepository.save(empresa);
     }
 	
-	private void datosDefault(Empresa empresa) {
-		empresa.setFechaCreacion(new Date());
-		empresa.setActivo(true);		
-	}
 }

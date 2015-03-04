@@ -4,18 +4,20 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.raze.admingol.domain.Cancha;
-import com.raze.admingol.domain.Usuario;
+import com.raze.admingol.environment.Util;
 import com.raze.admingol.repository.domain.CanchaRepository;
 
 @Service
 @Transactional
 public class CanchaServiceImpl implements CanchaService {
 
+	@Autowired
+	UsuarioService usuarioService;
+	
 	@Autowired
     CanchaRepository canchaRepository;
 
@@ -40,21 +42,17 @@ public class CanchaServiceImpl implements CanchaService {
     }
 
 	public void saveCancha(Cancha cancha) {
-		datosDefault(cancha);
-		cancha.setActivo(true);
+		cancha.setUsuario(usuarioService.findUsuario(Util
+				.getUsuarioAuthenticated().getId()));
+		cancha.setFechaCreacion(new Date());
         canchaRepository.save(cancha);
     }
 
 	public Cancha updateCancha(Cancha cancha) {
-		datosDefault(cancha);
+		cancha.setUsuario(usuarioService.findUsuario(Util
+				.getUsuarioAuthenticated().getId()));
+		cancha.setFechaModificacion(new Date());
         return canchaRepository.save(cancha);
     }
 	
-	private void datosDefault(Cancha cancha) {
-		Usuario principal = (Usuario) SecurityContextHolder.getContext()
-				.getAuthentication().getPrincipal();
-		cancha.setUsuario(principal);
-		cancha.setFechaCreacion(new Date());
-	}
-
 }

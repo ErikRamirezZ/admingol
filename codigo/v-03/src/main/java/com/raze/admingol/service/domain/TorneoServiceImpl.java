@@ -24,7 +24,10 @@ import com.raze.admingol.specifications.TorneoSpecifications;
 public class TorneoServiceImpl implements TorneoService {
 
 	static Logger log = LoggerFactory.getLogger(TorneoServiceImpl.class);
-	
+
+	@Autowired
+	UsuarioService usuarioService;
+
 	@Autowired
 	TorneoRepository torneoRepository;
 
@@ -48,10 +51,9 @@ public class TorneoServiceImpl implements TorneoService {
 		if (Util.userHasROLE_SUPER()) {
 			return torneoRepository.findAll();
 		} else {
-			return torneoRepository
-					.findAll(TorneoSpecifications.torneoInSucursales(
-							sucursalRepository.findByEmpresa(
-									Util.getUsuarioAuthenticated().getEmpresa())));
+			return torneoRepository.findAll(TorneoSpecifications
+					.torneoInSucursales(sucursalRepository.findByEmpresa(Util
+							.getUsuarioAuthenticated().getEmpresa())));
 		}
 
 	}
@@ -60,34 +62,32 @@ public class TorneoServiceImpl implements TorneoService {
 		List<Torneo> content = new ArrayList<Torneo>();
 		if (Util.userHasROLE_SUPER()) {
 			content = torneoRepository.findAll(
-					new org.springframework.data.domain.PageRequest(
-							firstResult/maxResults, maxResults)).getContent();
+					new org.springframework.data.domain.PageRequest(firstResult
+							/ maxResults, maxResults)).getContent();
 		} else {
 			Empresa empresa = Util.getUsuarioAuthenticated().getEmpresa();
-			List<Sucursal> sucursales = sucursalRepository.findByEmpresa(empresa);
-			Specification<Torneo> torneoSpecificationInSucursales = TorneoSpecifications.torneoInSucursales(sucursales);
+			List<Sucursal> sucursales = sucursalRepository
+					.findByEmpresa(empresa);
+			Specification<Torneo> torneoSpecificationInSucursales = TorneoSpecifications
+					.torneoInSucursales(sucursales);
 			content = torneoRepository.findAll(
-					torneoSpecificationInSucursales, 
-					new org.springframework.data.domain.PageRequest(
-							firstResult/maxResults, maxResults)).getContent();
+					torneoSpecificationInSucursales,
+					new org.springframework.data.domain.PageRequest(firstResult
+							/ maxResults, maxResults)).getContent();
 		}
 		return content;
 	}
 
 	public void saveTorneo(Torneo torneo) {
-		datosDefault(torneo);
+		torneo.setUsuario(usuarioService.findUsuario(Util.getUsuarioAuthenticated().getId()));
+		torneo.setFechaCreacion(new Date());
 		torneo.setActivo(true);
 		torneoRepository.save(torneo);
 	}
 
 	public Torneo updateTorneo(Torneo torneo) {
-		datosDefault(torneo);
+		torneo.setUsuario(usuarioService.findUsuario(Util.getUsuarioAuthenticated().getId()));
+		torneo.setFechaModificacion(new Date());
 		return torneoRepository.save(torneo);
 	}
-
-	private void datosDefault(Torneo torneo) {
-		torneo.setUsuario(Util.getUsuarioAuthenticated());
-		torneo.setFechaCreacion(new Date());
-	}
-
 }

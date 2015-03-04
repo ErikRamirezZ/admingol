@@ -1,16 +1,23 @@
 package com.raze.admingol.service.domain;
 
-import com.raze.admingol.domain.Estadisticas;
-import com.raze.admingol.repository.domain.EstadisticasRepository;
+import java.util.Date;
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.raze.admingol.domain.Estadisticas;
+import com.raze.admingol.environment.Util;
+import com.raze.admingol.repository.domain.EstadisticasRepository;
 
 @Service
 @Transactional
 public class EstadisticasServiceImpl implements EstadisticasService {
 
+	@Autowired
+	UsuarioService usuarioService;
+	
 	@Autowired
     EstadisticasRepository estadisticasRepository;
 
@@ -35,10 +42,16 @@ public class EstadisticasServiceImpl implements EstadisticasService {
     }
 
 	public void saveEstadisticas(Estadisticas estadisticas) {
+		estadisticas.setUsuario(usuarioService.findUsuario(Util
+				.getUsuarioAuthenticated().getId()));
+		estadisticas.setFechaCreacion(new Date());
         estadisticasRepository.save(estadisticas);
     }
 
 	public Estadisticas updateEstadisticas(Estadisticas estadisticas) {
+		estadisticas.setUsuario(usuarioService.findUsuario(Util
+				.getUsuarioAuthenticated().getId()));
+		estadisticas.setFechaModificacion(new Date());
         return estadisticasRepository.save(estadisticas);
     }
 }

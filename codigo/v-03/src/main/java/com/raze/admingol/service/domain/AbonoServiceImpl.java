@@ -1,5 +1,6 @@
 package com.raze.admingol.service.domain;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,12 +8,16 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.raze.admingol.domain.Abono;
+import com.raze.admingol.environment.Util;
 import com.raze.admingol.repository.domain.AbonoRepository;
 
 @Service
 @Transactional
 public class AbonoServiceImpl implements AbonoService {
 
+	@Autowired
+	UsuarioService usuarioService;
+	
 	@Autowired
     AbonoRepository abonoRepository;
 
@@ -37,10 +42,16 @@ public class AbonoServiceImpl implements AbonoService {
     }
 
 	public void saveAbono(Abono abono) {
-        abonoRepository.save(abono);
+		abono.setUsuario(usuarioService.findUsuario(Util
+				.getUsuarioAuthenticated().getId()));
+		abono.setFechaCreacion(new Date());
+		abonoRepository.save(abono);
     }
 
 	public Abono updateAbono(Abono abono) {
+		abono.setUsuario(usuarioService.findUsuario(Util
+				.getUsuarioAuthenticated().getId()));
+		abono.setFechaModificacion(new Date());
         return abonoRepository.save(abono);
     }
 	

@@ -18,9 +18,12 @@ import com.raze.admingol.repository.domain.SucursalRepository;
 public class SucursalServiceImpl implements SucursalService {
 
 	static Logger log = LoggerFactory.getLogger(SucursalServiceImpl.class);
-	
+
 	@Autowired
 	SucursalRepository sucursalRepository;
+
+	@Autowired
+	UsuarioService usuarioService;
 
 	public long countAllSucursals() {
 		return sucursalRepository.count();
@@ -35,10 +38,11 @@ public class SucursalServiceImpl implements SucursalService {
 	}
 
 	public List<Sucursal> findAllSucursals() {
-		if(Util.userHasROLE_SUPER()) {
+		if (Util.userHasROLE_SUPER()) {
 			return sucursalRepository.findAll();
 		} else {
-			return sucursalRepository.findByEmpresa(Util.getUsuarioAuthenticated().getEmpresa());
+			return sucursalRepository.findByEmpresa(Util
+					.getUsuarioAuthenticated().getEmpresa());
 		}
 	}
 
@@ -47,23 +51,20 @@ public class SucursalServiceImpl implements SucursalService {
 				new org.springframework.data.domain.PageRequest(firstResult
 						/ maxResults, maxResults)).getContent();
 	}
-	
 
 	public void saveSucursal(Sucursal sucursal) {
-		sucursal = datosDefault(sucursal);
+		sucursal.setUsuario(usuarioService.findUsuario(Util
+				.getUsuarioAuthenticated().getId()));
+		sucursal.setFechaCreacion(new Date());
 		sucursal.setActivo(true);
 		sucursalRepository.save(sucursal);
 	}
 
 	public Sucursal updateSucursal(Sucursal sucursal) {
-		datosDefault(sucursal);
+		sucursal.setUsuario(usuarioService.findUsuario(Util
+				.getUsuarioAuthenticated().getId()));
+		sucursal.setFechaModificacion(new Date());
 		return sucursalRepository.save(sucursal);
 	}
-
-	private Sucursal datosDefault(Sucursal sucursal) {
-//		sucursal.setUsuario(Util.getUsuarioAuthenticated());
-		sucursal.setFechaCreacion(new Date());
-		return sucursal;
-	}
-
+	
 }

@@ -1,8 +1,12 @@
 package com.raze.admingol.service.domain;
 
 import com.raze.admingol.domain.ControlPagoServicio;
+import com.raze.admingol.environment.Util;
 import com.raze.admingol.repository.domain.ControlPagoServicioRepository;
+
+import java.util.Date;
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,6 +15,9 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class ControlPagoServicioServiceImpl implements ControlPagoServicioService {
 
+	@Autowired
+	UsuarioService usuarioService;
+	
 	@Autowired
     ControlPagoServicioRepository controlPagoServicioRepository;
 
@@ -35,10 +42,17 @@ public class ControlPagoServicioServiceImpl implements ControlPagoServicioServic
     }
 
 	public void saveControlPagoServicio(ControlPagoServicio controlPagoServicio) {
+		controlPagoServicio.setUsuario(usuarioService.findUsuario(Util
+				.getUsuarioAuthenticated().getId()));
+		controlPagoServicio.setFechaCreacion(new Date());
+		controlPagoServicio.setActivo(true);
         controlPagoServicioRepository.save(controlPagoServicio);
     }
 
 	public ControlPagoServicio updateControlPagoServicio(ControlPagoServicio controlPagoServicio) {
+		controlPagoServicio.setUsuario(usuarioService.findUsuario(Util
+				.getUsuarioAuthenticated().getId()));
+		controlPagoServicio.setFechaModificacion(new Date());
         return controlPagoServicioRepository.save(controlPagoServicio);
     }
 }

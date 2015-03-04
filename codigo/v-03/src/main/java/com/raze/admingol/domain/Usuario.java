@@ -4,13 +4,14 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Version;
@@ -71,7 +72,6 @@ public class Usuario implements UserDetails {
     /**
      */
     @NotNull
-    @Column(unique = true)
     private String username;
 
     /**
@@ -82,7 +82,7 @@ public class Usuario implements UserDetails {
     /**
      */
     @NotNull
-    @ManyToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Rol> rol = new ArrayList<Rol>();
 
     /**
@@ -95,7 +95,7 @@ public class Usuario implements UserDetails {
 
     /**
      */
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Usuario usuario;
 
     /**
