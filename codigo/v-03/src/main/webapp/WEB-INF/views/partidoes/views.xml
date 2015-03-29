@@ -4,13 +4,16 @@
     <definition extends="default" name="partidoes/list">
         <put-attribute name="body" value="/WEB-INF/views/partidoes/list.jspx"/>
     </definition>
-<definition extends="default" name="partidoes/show">
+    <definition extends="default" name="partidoes/show">
         <put-attribute name="body" value="/WEB-INF/views/partidoes/show.jspx"/>
     </definition>
-<definition extends="default" name="partidoes/create">
+    <definition extends="default" name="partidoes/create">
         <put-attribute name="body" value="/WEB-INF/views/partidoes/create.jspx"/>
     </definition>
-<definition extends="default" name="partidoes/update">
+    <definition extends="default" name="partidoes/update">
         <put-attribute name="body" value="/WEB-INF/views/partidoes/update.jspx"/>
+    </definition>
+    <definition extends="default" name="partidoes/calendar">
+        <put-attribute name="body" value="/WEB-INF/views/partidoes/calendar.jspx"/>
     </definition>
 </tiles-definitions>

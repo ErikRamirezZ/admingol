@@ -489,3 +489,16 @@ fieldset th {
 .field_file {
 	width: 180px;
 }
+
+#_calendar_controls{
+	margin-top: 5px;
+}
+
+#_calendar_controls div{
+	display: inline;
+	margin-right: 10px;
+}
+
+#_frenquency {
+	float: right;
+}

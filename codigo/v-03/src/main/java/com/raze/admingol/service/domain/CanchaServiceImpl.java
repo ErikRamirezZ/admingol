@@ -45,6 +45,7 @@ public class CanchaServiceImpl implements CanchaService {
 		cancha.setUsuario(usuarioService.findUsuario(Util
 				.getUsuarioAuthenticated().getId()));
 		cancha.setFechaCreacion(new Date());
+		cancha.setActivo(true);
         canchaRepository.save(cancha);
     }
 

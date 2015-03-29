@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" 
+    xmlns:jsp="http://java.sun.com/JSP/Page" 
+    xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" 
+    xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" 
+    xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    
+    <spring:url value="/resources/scripts/calendar.js" var="calendar_js"/>
+    <script src="${calendar_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+    
+    <spring:message arguments="${partidoes}" code="entity_show" var="title_msg" htmlEscape="false" />
+    
+    <spring:message code="frequency_today" var="frequency_today" htmlEscape="false" />
+    <spring:message code="frequency_daily" var="frequency_daily" htmlEscape="false" />
+    <spring:message code="frequency_weekly" var="frequency_weekly" htmlEscape="false" />
+    <spring:message code="frequency_month" var="frequency_month" htmlEscape="false" />
+    <spring:message code="frequency_agenda" var="frequency_agenda" htmlEscape="false" />
+    
+    <util:panel id="partidos_calendar" title="${title_msg}" openPane="true">
+    
+    <div id="_calendar">
+        <div id="_calendar_controls">
+          <div id="_navigation">
+              <button onclick="alert('si funciona')" >${frequency_today}</button>
+              <button onclick="back()">&lt;</button>
+              <button onclick="next()">&gt;</button>
+          </div>
+          <div id="_current_date">martes, 10 mar 2015 | 30 mar - 15 abr 2015 | Marzo 2015 | viernes, 20 mar 2015</div>
+          <div id="_frenquency">
+              <button onclick="daily()">${frequency_daily}</button>
+		          <button onclick="weekly()">${frequency_weekly}</button>
+		          <button onclick="monthly()">${frequency_month}</button>
+		          <button onclick="agenda()">${frequency_agenda}</button>
+          </div>
+        </div>
+        <br />
+        <div id="_table_calendar"> </div>
+    </div>
+    </util:panel>
+</div>

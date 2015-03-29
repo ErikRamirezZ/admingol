@@ -40,7 +40,7 @@
           </menu:category>
           <menu:category id="c_partido" z="/lP1jvdnWQxpyeByg9cpBVLSslQ=">
               <menu:item id="i_partido_new" messageCode="global_menu_new" url="/partidoes?form" z="Xg9y5lhYECVB4HPix+20GfIUoUY="/>
-              <menu:item id="i_partido_list" messageCode="global_menu_list" url="/partidoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="jmxAmlR7UYl6HV3YV85Z91DgVV8="/>
+              <menu:item id="i_partido_calendar" messageCode="menu_item_partido_calendar_label" url="/partidoes/calendar?period=monthly" z="jmxAmlR7UYl6HV3YV85Z91DgVV8="/>
           </menu:category>
           <menu:category id="c_cedulapartido" z="1LAxKp/dW+GW2FOYRyLjVPkk60Q=" >
               <menu:item id="i_cedulapartido_new" messageCode="global_menu_new" url="/cedulapartidoes?form" z="sgQgShRh/8jB1dfSlrLDz47zZI0="/>

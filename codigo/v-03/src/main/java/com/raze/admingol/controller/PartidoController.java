@@ -100,6 +100,17 @@ public class PartidoController {
         return "partidoes/list";
     }
 
+	@RequestMapping(value = "/calendar", produces = "text/html")
+    public String calendar(@RequestParam(value = "period", required = true) String period, Model uiModel) {
+        if (period != null) {
+            uiModel.addAttribute("partidoes", partidoService.findAllPartidoes());
+        } else {
+            uiModel.addAttribute("partidoes", partidoService.findAllPartidoes());
+        }
+        addDateTimeFormatPatterns(uiModel);
+        return "partidoes/calendar";
+    }
+
 	@RequestMapping(method = RequestMethod.PUT, produces = "text/html")
     public String update(@Valid Partido partido, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
