@@ -86,6 +86,7 @@ function weekly() {
 	dojo.byId("_table_calendar").innerHTML = "<table border='2px'>"+ headerTable + bodyTable + "</table>";	
 }
 
+
 function daily() {
     if(currentDate == null) {
 		currentDate = new Date();
@@ -137,7 +138,7 @@ function back() {
  */
 function jsonCallFindPartidosByFechaBetween(frequency, currentDate) {
 	dojo.xhrGet({
-	    url: "/admingol/partidoes/",
+	    url: "/admingol/partidoes/findPartidoesByFechaAndFrequency",
 	    handleAs: "json",
 	    preventCache: true,
 	    load: function(data, ioargs){
