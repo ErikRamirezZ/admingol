@@ -19,7 +19,7 @@ public class Util {
 
 	public static boolean userHasROLE_SUPER() {
 		for (Rol rol : getUsuarioAuthenticated().getRol()) {
-			if (Constantes.ROLE_SUPER.equals(rol.getNombre())) {
+			if (Constant.ROLE_SUPER.equals(rol.getNombre())) {
 				return true;
 			}
 		}

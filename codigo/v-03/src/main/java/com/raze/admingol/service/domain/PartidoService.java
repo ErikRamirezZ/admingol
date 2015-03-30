@@ -1,5 +1,7 @@
 package com.raze.admingol.service.domain;
 import com.raze.admingol.domain.Partido;
+
+import java.util.Date;
 import java.util.List;
 
 public interface PartidoService {
@@ -23,5 +25,9 @@ public interface PartidoService {
 
 
 	public abstract Partido updatePartido(Partido partido);
+
+
+	public abstract List<Partido> findPartidoesByFechaAndFrequency(
+			Date currentDate, String frequency);
 
 }

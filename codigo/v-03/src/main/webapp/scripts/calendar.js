@@ -2,8 +2,13 @@
  * 
  */
 
+var MONTHLY = 'MONTHLY';
+var WEEKLY = 'WEEKLY';
+var DAILY = 'DAILY';
+
+
 var currentDate;
-var frequency = "monthly";
+var frequency = MONTHLY;
 
 dojo.addOnLoad(function(){
 	  monthly();
@@ -89,35 +94,73 @@ function daily() {
     bodyTable = "<tr><td></td></tr>"
     dojo.byId("_table_calendar").innerHTML = "<table border='2px'>"+ headerTable + bodyTable + "</table>";
 }
+
+/**
+ * Realiza las operaciones necesarias para obtener el periodo siguiente en base a la 
+ * <b>fequency</b> y a la <b>currenDate</b>
+ */
 function next() {
-	if(frequency == "monthly") {
+	if(frequency == MONTHLY) {
 		currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth()+1, currentDate.getDate());
 		monthly();
-	} else if(frequency == "weekly") {
+	} else if(frequency == WEEKLY) {
 		currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()+7);
 		weekly();		
-	} else if(frequency == "daily") {
+	} else if(frequency == DAILY) {
 		currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth()+1, currentDate.getDate()+1);
 //		weekly();
 	} 
 }
 
+
+/**
+ * Realiza las operaciones necesarias para obtener el periodo anterior en base a la 
+ * <b>fequency</b> y a la <b>currenDate</b>
+ */
 function back() {
-	if(frequency == "monthly") {
+	if(frequency == MONTHLY) {
 		currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth()-1, currentDate.getDate());
 		monthly();
-	} else if(frequency == "weekly") {
+	} else if(frequency == WEEKLY) {
 		currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()-7);
 		weekly();		
-	} else if(frequency == "daily") {
+	} else if(frequency == DAILY) {
 		currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth()+1, currentDate.getDate()-1);
 //		weekly();
 	} 
 }
 
 
-function jsonCallFindPartidosByFechaBetween() {
-	
+/**
+ * Llamada JSON para obtener los partidos por el tipo de calendario y la 
+ * fecha que se esta manejando
+ */
+function jsonCallFindPartidosByFechaBetween(frequency, currentDate) {
+	dojo.xhrGet({
+	    url: "/admingol/partidoes/",
+	    handleAs: "json",
+	    preventCache: true,
+	    load: function(data, ioargs){
+	      targetNode.innerHTML = "XHR returned HTTP status: " + ioargs.xhr.status;
+	    },
+	    error: function(error, ioargs){
+	      var message = "";
+	      switch(ioargs.xhr.status){
+	         case 404:
+	           message = "The requested page was not found";
+	           break;
+	         case 500:
+	           message = "The server reported an error.";
+	           break;
+	         case 407:
+	           message = "You need to authenticate with a proxy.";
+	           break;
+	         default:
+	           message = "Unknown error.";
+	      }
+	      targetNode.innerHTML = message;
+	    }
+	  });
 }
 
 
